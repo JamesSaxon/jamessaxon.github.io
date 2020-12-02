@@ -22,8 +22,8 @@ title: Measuring Urban Resources
 description: >- # this means to ignore newlines until "baseurl:"
   I measure public resources in urban environments using 
   large datasets, distributed computing, and custom electronics.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://jamessaxon.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jamessaxon
 github_username:  jamessaxon
 author: James Saxon
