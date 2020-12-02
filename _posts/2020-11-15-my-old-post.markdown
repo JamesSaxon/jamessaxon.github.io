@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Fussing with postsi -- changing it again!"
+title:  "Fussing with posts -- changing it again!"
 date:   2020-11-15 15:30:08 -0600
 categories: jekyll update
 ---
