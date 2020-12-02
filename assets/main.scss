@@ -1,0 +1,18 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+.site-header {
+ background-color: #800000;
+}
+
+.site-title, .page-link {
+ color: white !important;
+}
+
+a {
+  color: #800000;
+  text-decoration: none;
+}
