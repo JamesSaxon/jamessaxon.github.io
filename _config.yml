@@ -34,6 +34,14 @@ theme: minima
 plugins:
   - jekyll-feed
 
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
+google_analytics: UA-123686738-1
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
