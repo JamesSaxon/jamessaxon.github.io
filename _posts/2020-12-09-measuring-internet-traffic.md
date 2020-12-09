@@ -380,19 +380,6 @@ eth1:
 ```
 Here I'm setting a static address on 192.168.1.1/24
   to make sure that I'm not crazy, and that I can actually use the dongle.
-If you were checking your wifi, it could be like:
-```
-wifis:
-  wlan0:
-    dhcp4: no
-    addresses: [192.168.1.5/24]
-    gateway4: 192.168.1.1
-    nameservers:
-      addresses: [192.168.1.1, 1.1.1.1, 8.8.8.8]
-    access-points:
-      "My Great Network":
-        password: "my sturdy password"
-```
 Then do 
 ```
 sudo netplan apply
