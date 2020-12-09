@@ -18,3 +18,17 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: #800000;
+  text-decoration: none;
+}
+
+figcaption {
+  font-size: 9pt;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
