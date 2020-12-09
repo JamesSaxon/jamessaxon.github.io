@@ -403,7 +403,9 @@ ip addr show eth1
 ```
 So far so good.  I can even ssh in.
 
-Now enable IP forwarding 
+Now go back and move it off the 192.168.1.1 subnet, to like 192.168.7.1, 
+  a new static "gateway" address.
+Enable IP forwarding 
 ```
 sudo sysctl -w net.ipv4.ip_forward=1
 ```
