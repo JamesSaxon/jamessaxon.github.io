@@ -686,7 +686,7 @@ Former-NOISE Lab member, [Danny Huang][huang],
 [^2]: The [IoT Inspector][iot-inspector] used `arpspoof` to redirect traffic from IoT devices, to understand how they phone home and serve content.  [Project BISMARK][project-bismark] started with active measurements of network connections (somewhat like the last post).  And [NetMicroscope][netmicroscope] added inference on encrypted, intercepted traffic to quantify the performance of video applications.
 [^3]: Because MAC addresses are nominally static, your activity can potentially be linked as you roam around the city, and your device looks around for open networks.  For this reason, recent releases of both Android and iOS randomize the MAC addresses (in different ways) when you are not associated to a network.
 [^4]: Since the "technical implementation" sections are for experts, I do not describe how to set up the pi.  You can find that in lots of places.
-[^5]: You can use `hostapd`, following instructions like [this][gary-pi].  Remember that wifi passwords must be at least 8 characters!  The hostapd failures messages are literally empty, and this tripped me up.  My other mistake was to try 5 GHz 802.11a (`hw_mode=a`), but forget to change the channel.
+[^5]: You can use `hostapd`, following instructions like [this][gary-pi], or you can probably figure it out with netplan, if networkd can put the device in AP mode (`mode: ap`).  Remember that wifi passwords must be at least 8 characters!  The hostapd failures messages are literally empty, and this tripped me up.  My other mistake was to try 5 GHz 802.11a (`hw_mode=a`), but forget to change the channel.
 
 [last-post]:       {% post_url 2020-12-07-basic-measurements-of-access-networks %}
 [noise]:           https://noise.cs.uchicago.edu/
