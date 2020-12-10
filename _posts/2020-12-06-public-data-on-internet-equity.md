@@ -8,20 +8,29 @@ header-includes:
   - \hypersetup{colorlinks,linkcolor=[rgb]{0,0.3,0.8},urlcolor=[rgb]{0,0.3,0.8}}
 ---
 
-Over the summer, I moved from the 
-  [Harris School of Public Policy][harris] and the 
-  [Center for Spatial Data Science][csds] to the 
-  [Center for Data and Computing][cdac] and the 
-  [NOISE Lab][noise], directed by 
-  [Nick Feamster][feamster].
-I am continuing to study resource equity in urban neighborhoods,
-  but in line with the work of the lab, 
-  my next focus will be on broadband Internet.
+Modern society is mediated through the Internet.
+Equity in society requires equity in usable broadband Internet access:
+  for communication, education, health, and quality of life or entertainment.
+This was true before the coronavirus pandemic and it will be true when the pandemic subsides.
+But the need today is more acute than it has ever been.
 
-In subsequent posts, I will describe simple techniques for measuring a home Internet connection.
-But aside from the fact that it's kind of _fun_, why should we try to measure access links directly?
+This is a multifaceted problem:
+  the connections available to people and their bandwidth,
+  the devices that they use on those connections, and 
+  their digital "literacy" in leveraging those resources.
+Understanding and responding to digital literacy requires good data
+  from a variety of angles.
+In a series of three posts, I want to lay out 
+
+1. existing public data sources on internet access and equity (this post),
+2. simple technical methods for [measuring performance at home][post2], and 
+3. some of the more-elaborate strategies required for [measuring consumption][post3] and application performance.
+
+But aside from the fact that it's kind of _fun_ to fuss with your router,
+  why should we pursue those dierect measurements at all?
 After all, hardware is expensive, deploying it is difficult, and data is free:
   at first blush, there are a lot of data sources out there.
+Those data are the subject of this post.
 
 To make a long story short:
   the available data use very rough metrics of "broadband" (presence of a 25/3 Mbps connection), 
@@ -44,6 +53,17 @@ Map by <a href="https://saxon.cdac.uchicago.edu">James Saxon</a>,
 <a href="http://www.uchicago.edu">University of Chicago</a>.
 </figcaption>
 </figure>
+
+This project on broadband Internet 
+  continues my study of resource equity in urban neighborhoods,
+  but aligns it with the "classical strengths" of my current research group.
+I moved over the summer from the 
+  [Harris School of Public Policy][harris] and the 
+  [Center for Spatial Data Science][csds] to the 
+  [Center for Data and Computing][cdac] and the 
+  [NOISE Lab][noise], directed by 
+  [Nick Feamster][feamster].
+
 
 #### FCC Form 477.
 Perhaps most prominent is the venerable 
@@ -216,6 +236,9 @@ That is what we're setting out to do.
 [^6]: A project by the Senseable City Lab at MIT [estimates][scl-taxis] the coverage of taxis as an opportunistic sensor deployment.
 [^7]: It is perhaps interesting to note that for domain-level sites (like Wikipedia), either the sites' own logs or any high-level DNS resolver would do.  [Moura et al][dns-congestion] showed at IMC '20 that in the Netherlands, the concentration of DNS resolution has grown quite extreme.  We might expect it to be even more so in the US / .com TLD.  What this means is that Google and Amazon know if you're using Wikipedia, even if you don't search, because they are likely the ones who are telling you _how to get to Wikipedia_.  
 
+[post2]:          {% post_url 2020-12-07-basic-measurements-of-access-networks %}
+[post3]:          {% post_url 2020-12-09-measuring-internet-traffic %}
+
 [harris]:         https://harris.uchicago.edu/
 [csds]:           https://spatial.uchicago.edu/
 [cdac]:           https://cdac.uchicago.edu/
@@ -265,5 +288,6 @@ That is what we're setting out to do.
 [carto]:          http://carto.com/
 [me]:             https://saxon.cdac.uchicago.edu/
 [wargames]:       https://en.wikipedia.org/wiki/WarGames
+
 
 

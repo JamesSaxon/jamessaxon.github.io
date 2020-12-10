@@ -8,7 +8,7 @@ header-includes:
   - \hypersetup{colorlinks,linkcolor=[rgb]{0,0.3,0.8},urlcolor=[rgb]{0,0.3,0.8}}
 ---
 
-In my last post, I described public datasets for understanding equity in Internet access.
+In my [last post][last-post], I described public datasets for understanding equity in Internet access.
 It is also useful to be able to measure connections directly.
 This will allow us to roll out tests in specific sets of households,
   and measure the network parameters that are necessary in the "real world."
@@ -478,6 +478,8 @@ The grafana version is shown below.
 [^6]: Maybe the cool kids are using `ip n`.  But you _must_ run nmap!!
 [^7]: Previously I've used [ThingSpeak][thingspeak] for integrating [Particle][particle] devices.  That is great for really fast integrations, but ultimately I preferred the flexibility that comes with my own database. 
 [^8]: The committed scripts actually push to Influx 2.0 in the cloud as well as Influx 1.8 on one of our servers.
+
+[last-post]:        {% post_url 2020-12-06-public-data-on-internet-equity %}
 
 [cdac]:             https://cdac.uchicago.edu/
 [thingspeak]:       https://thingspeak.com/
