@@ -16,11 +16,11 @@ This means: the devices they use to access the internet,
   and how much bandwidth they really consume.
 Seeing the traffic helps us understand
   what real-world applications require for daily activities.[^1]
-In particular, 
-  it allows us to quantify what students 
-  in Chicago Public Schools really need,
-  and whether or not current programs meet that need.
-What is needed for equitable participation -- with or without a global pandemic?
+What Internet connection is needed, 
+  for equitable participation in public education&nbsp;--
+  with or without a global pandemic?
+What do students in Chicago Public Schools need?
+Do current programs meet that need?
 
 The measurement of consumption is a bit trickier
   than the active measurements described in the last post.
@@ -44,6 +44,10 @@ My immediate project is to measure consumption, but these techniques
   are also applicable to the measurement of application performance.
 Recent works by the [NOISE Lab][noise] / [Feamster group][feamster]
   have used each of these methods, except for wireless hardware.[^2]
+
+It is worth emphasizing that this post presents _techniques_ or _strategies_,
+  and that deploying these in a production context entails greater challenges with regards
+  security and management.
 
 ### Some Vocabulary
 
@@ -174,6 +178,20 @@ Finally, I present the technical steps
   required to measure network consumption on a home network 
   with this method on a raspberry pi.
 Those sections are geared to technical readers without apologies.[^4]
+
+However, since this post is already long, here's the short version: 
+
+| Method <br> & Cost              | Strengths                | Limitations                                                   | Device Out of Path? | Potential Bottlenecks           |
+|---------------------------------|--------------------------|---------------------------------------------------------------|---------------------|---------------------------------|
+| Wired: Switch       <br> ($400)  | Robust                   | Lots of equipment to install & configure.                     | ✔ | None!?               |
+| Wired: pi as Router <br> ($335)      | Flexible and fewer parts | Security concerns (manageable)<br>Measurement device in infrastructure | ✗ | pi CPU<br>USB Dongle |
+| Wireless: sniffing  <br> ($408)      | See neighborhood wifi use & spectrum       | No IP headers  | ✔ | Just _miss_ the data.
+| Router-based        <br> ($390)      | Easy install<br>Direct access to interfaces for data and wireless params | Changing equipment to measure it!<br>Turris/OpenWRT not super flexible;`tshark` not available | ✗ | Theoretically none. |
+| Software: `arpsoof` <br> ($315)      | Cost<br>Can be "turned on" with active measures | Performance | ✗ | Single link to pi must "double" traffic <br>IP forwarding | 
+
+Note that costs include a separate modem and router + access point, which households may currently own as a single box.
+These devices are not strictly necessary for the software-basd method
+  (so long as the router doesn't have controls on ARP spoofing).
 
 #### 1. Wired hardware: switch mirroring
 
@@ -358,15 +376,14 @@ Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 cdc_ether              20480  0
 r8152                  73728  0
 ```
-So it's there and the RL 8152 driver is too.
+So it's there and the RTL 8152 driver is too.
 It seems like `ifconfig` is on the way out, but if we do:
 ```
 ip addr show
 ```
 we see that the device is there but DOWN.
-
-Since Ubuntu 17, that means a visit to `netplan`.
-(This is where Raspbian is _way_ easier.)
+Since Ubuntu 17, that has meant a visit to `netplan`.
+(This is where Raspbian is easier, in my opinion.)
 Create the additional Ethernet interface
   among the `ethernet` in `/etc/netplan/50-cloud-init.yaml`.
 ```
@@ -390,9 +407,9 @@ ip addr show eth1
 ```
 So far so good.  I can even ssh in.
 
-Now go back and move it off the 192.168.1.1 subnet, to like 192.168.7.1, 
-  a new static "gateway" address.
-Enable IP forwarding 
+Now go back and move it off the 192.168.1.1 subnet, 
+  to a new static "gateway" address, like 192.168.7.1.
+Then nable IP forwarding via
 ```
 sudo sysctl -w net.ipv4.ip_forward=1
 ```
@@ -421,7 +438,7 @@ Tell `isc-dhcp-server` to mind DHCP requests on your interface,
 INTERFACESv4="eth1"
 ```
 
-Finally, the `iptables` rule to do Network Address Translation
+Finally, the issues `iptables` rule to do Network Address Translation
   (turn port addressing into local IP addresses):
 ```
 sudo iptables -t nat -A  POSTROUTING -o eth0 -j MASQUERADE
@@ -446,8 +463,23 @@ Note that these instructions can change a lot
   between operating systems.
 The steps above are for Ubuntu Server 20.04,
   which is not always the friendliest.
-The method for setting static IP addresses 
+For example, the method for setting static IP addresses 
   is different on Raspbian -- see [here][gary-pi].
+
+I should also emphasize that if you set up a pi as a router, 
+  you really _must_ manage its security settings.
+Raspbian now ships with ssh disabled (which is probably a good thing).
+If you want to be able to contact your device, 
+  you should obviously not use default passwords.
+In addition, you could restrict access in `/etc/ssh/sshd_config`
+  by setting it the `ListenAddress` that you will use.
+You could also turn it towards the local network 
+  with `AllowUsers you@192.168.1.1/241`.
+And you might change the port (`Port`) off of 22.
+
+You could do similar things with `iptables` rules or `ufw`.
+But you should definitely do _something_ like this.
+
 
 #### 3. Wireless hardware: packet sniffing 
 
@@ -457,9 +489,9 @@ Use two Wifi devices in monitor mode to sniff for packets on the 2.4 and 5 GHz b
 One unique appeal to packet sniffing is that you can see traffic outside of your home network.
 If you live in a city, this means that you can see how people in the neighborhood
   use the Internet.
-You can count wireless devices.
-I think most people use Wifi over Ethernet at this point, 
-  so you're not missing much, with the wired-only devices.
+You can only count wireless devices,
+  but I think most people use Wifi over Ethernet at this point, 
+  so I don't see this as a big limitation.
 If your antennas are powerful or plentiful,
   you could get a pretty good sense of how and when 
   different neighborhoods use the Internet.
@@ -467,7 +499,7 @@ If your antennas are powerful or plentiful,
 The downside is that you can't see where any traffic is going:
   the addresses that you can read are the BSSIDs of the 
   devices and the access points, not the IP destinations.
-This is a real limitation for monitoring the performance applications.
+This is a real limitation for monitoring application performance,
   though it is probably possible to fingerprint out certain applications,
   and do a certain amount with timing and flows alone.
 There is also sometimes a _lot_ of internal traffic, 
@@ -475,7 +507,7 @@ There is also sometimes a _lot_ of internal traffic,
 
 Another challenge is that you have to track which channels 
   to monitor the traffic on.
-Usually, would set the packet sniffer to either "hop"
+Usually, we would set the packet sniffer to either "hop"
   from channel to see traffic on each one, 
   or focus on a single channel.
 Either way, you're liable to miss traffic.
@@ -492,14 +524,15 @@ This requires one interface for each wireless band, that can be put into monitor
 
 **Equipment list and cost.** 
 In addition to the [modem][modem], [nighthawk router][nighthawk], and [pi][pi4-kit]
-  already listed, I used two wireless dongles from ALFA networks:
+  already listed, I used two wireless dongles from ALFA networks.
+Including all components, the cost is around $408.
 
 * [AWUS036ACH][alfa5] for 5 GHz ($60) 
 * [AWUS036NEH][alfa2] for 2.4 GHz ($33)
 
 **Technical implementation.**
 
-The 5 GHz required me to install the driver from this [aircrack-ng][alfa5-driver] repo.
+The 5 GHz dongle required me to install the driver from this [aircrack-ng][alfa5-driver] repo.
 ```
 sudo apt-get install dkms
 git clone git@github.com:aircrack-ng/rtl8812au.git
@@ -508,7 +541,7 @@ sudo make dkms_install
 ```
 The [driver for the 2.4 GHz antenna](https://github.com/art567/mt7601usta0) should be included in the kernel.
 Then you can set them to monitor and set the channels.
-Just for clarity, I am taking these channels as given (I forced them, for this test).
+Just for clarity, I am taking these channels (11 and 157) as given (I forced them, for this test).
 ```
 sudo ip link set wlan1 down
 sudo ip link set wlan2 down
@@ -548,12 +581,16 @@ Personally, I was so surprised at data headed to my Chromecast, that I unplugged
 So simple to get started!
 Out of the box, you have almost all the working parts.
 The downside is that 
-  OpenWRT space is not the easiest or most flexible environment, 
+  OpenWRT is not the easiest or most flexible environment, 
   and the Turris equipment is quite expensive.
+
+In addition, the Turris was probably _not_ your router when you started, 
+  so you may be changing your home network in order to measure it.
+That's fine for consumption, but not great for other performance measures.
 
 I investigated using the OpenWRT 
   on my existing home router (the [Netgear Nighthawk 6900P][nighthawk]),
-  but it seems OpenWRT doesn't play nice with closed source drivers for the Broadcom chips.
+  but it seems OpenWRT doesn't play nice with proprietary drivers for the Broadcom chips.
 I need my network to actually function, so this was out.
 It might work with the [DD-WRT][ddwrt-7000] ~fork, but I didn't push this.
 
@@ -564,8 +601,8 @@ The OpenWRT is connected directly to the cable modem,
 <img src="/assets/img/openwrt.png" alt="OpenWRT Router" height="180" class=center />
 
 **Equipment list and cost.**
-Total cost is around $390, 
-making this one of, if not _the_ most expensive methods (depending on how much you can save on the switches).
+Total cost is around $390.
+The router is expensive, but it obviates the need for almost all of the other parts.
 * Modem: [NETGEAR Cable Modem CM500][modem] ($55).
 * OpenWRT Router: [Turris Omnia][omnia] ($335).
   This is a very nice product, but quite expensive.
@@ -578,7 +615,7 @@ making this one of, if not _the_ most expensive methods (depending on how much y
 **Technical implementation.**
 Congratulations on your purchase and deep pockets!
 The Omnia is a great product, but it did take a little bit of configuring.
-Without setting wider, 40 MHz channels, I was getting unacceptably low bandwidth
+Without setting wider, 40 MHz channels, I was getting unacceptably low bandwidth.
 The DNS also seriously fell over -- 
   `nytimes.com`, `archives.gov` -- things didn't load, family complained, `dig` failed to resolve, 
   and so I forced everything to resolve through Google (sad but true).
@@ -636,10 +673,11 @@ The idea of ARP (Address Resolution Protocol) spoofing
   is to tell the target device that you are the router (that your MAC address is the router's),
   and tell the router that you are the target device (that your MAC address is also the device's).
 ARP doesn't have authentication, so each one believes you,
-  and so all data to and from the device passes through you.
+  and all the data to and from the device passes through you.
 You can now monitor, modify, or drop that traffic.
 
-Since we want to monitor consumption, we turn on 
+Since we want to monitor consumption and not disrupt it, we turn on IP forwarding.
+This is very efficient -- it built into the kernel.
 
 **Strengths and limitations.**
 
@@ -647,6 +685,9 @@ ARP spoofing is possibly the easiest and cheapest method,
 There are some concerns about performance, 
   but in my experience video chats were all fine when running through the pi.
 In this case, the wireless router runs as a router, and we drop the Linksys router and the switch.
+
+One big advantage of this is that it's easy to turn on after the fact, 
+  if you're already running passive measurements.
 
 **Network topology.**
 All you need is a pi hanging off the router,
