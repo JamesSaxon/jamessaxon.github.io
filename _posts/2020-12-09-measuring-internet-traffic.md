@@ -247,7 +247,7 @@ The total cost of this gear is $445,
   The Wifi is usually the weakest link in a home network,
   so it's worth investing to get this part right.
 
-**Configuration.**
+**Technical implementation.**
 This method is almost "plug and play," but there are a few tricks.
 
 Out of the box (or after a reset), the switch will set itself to 192.168.0.239,
