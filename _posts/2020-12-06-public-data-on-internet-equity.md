@@ -24,7 +24,7 @@ After all, hardware is expensive, deploying it is difficult, and data is free:
   at first blush, there are a lot of data sources out there.
 
 To make a long story short:
-  the available data use very rough metrics (presence of a 25/3 connection), 
+  the available data use very rough metrics of "broadband" (presence of a 25/3 Mbps connection), 
   or they have significant sampling limitations.
 Notwithstanding, they are very valuable, so I'll review some of them here.
 The map below draws on several of these data sources,
@@ -80,7 +80,8 @@ The US Census does that in two surveys:
   the [American Community Survey][acs-site] (ACS, the successor to the Census long form), 
   and the National Telecommunications and Information Administration's (NTIA) supplement to the Current Population Survey (CPS).
 The ACS captures [device][acs-comp] ownership and 
-  [broadband][acs-broadband] subscriptions in households, and is about 1% of the US population annually.
+  [broadband][acs-broadband] subscriptions in households.
+The sample size is about 1% of the US population annually.
 "Broadband" is understood dichotomously as the presence or absence of a 25/3 Mbps connection.
 The ACS API provides estimates down to the Census Tract level,
   and using the [IPUMS microdata][ipums] it is possible to construct measures 
@@ -109,6 +110,8 @@ But the data have somewhat important limitations,
   as [recently described][feamster-cacm] by Nick Feamster (my adviser at CDAC) and Jason Livingood (Comcast)
   in the CACM.[^3]
 The server infrastructure is [not widely distributed][mlab-servers], and it has not proven entirely reliable.
+
+There are also some low-level technical issues.
 In some instances, the 10-second test may not suffice for a TCP link to saturate.
 More to the point, the `ndt` protocol has not included multiple TCP threads
   until [quite recently][mlab-ndt7].
@@ -147,7 +150,7 @@ The [data][samknows-data] are used for the annual
 But it too has some issues of _who_ is captured.
 The sampling strategy aims to ensure that ISPs, rather than demographic groups, are adequately sampled.
 So like Ookla devices, SamKnows households tend to skew wealthier than the general population.
-In addition, there are just a few thousand households nation-wide,
+In addition, there are just a few thousand households in the sample nation-wide,
   which is not enough to say how _certain groups_ fare within Chicago, for instance.
 (There are no demographics and limited information about units' geography.[^4])
 
@@ -159,11 +162,19 @@ The RIPE probes used to be hardware devices attached via Ethernet to a router,
 
 #### Citizen science and server logs.
 There are of course many, many more strategies and datasets.
-Along the "citizen science" and distributed data front, 
-  classic war-driving efforts like [WiGLE][wigle] and 
-  and more-institutionalized efforts like [Mozilla Location Services][mls]
-  assemble a "Census" of BSSIDs (wireless access point unique IDs).
-I've dabbled with this strategy -- both with apps and jury-rigging raspberry pis.
+Telecom companies spend a fortune "drivetesting" their networks,
+  rolling around to map access and gaps.
+There's plenty of room for a citizen science, on the same thing.
+As you go about your neighborhood and routines,
+  your phone registers available access points.
+The "game" of recording those systematically and competitively 
+  is a popular activity for hackers,[^5]
+  known as "wardriving" (from wardialing, from [WarGames][wargames]).
+The [WiGLE][wigle] wardriving platform makes its data available, 
+  and there are other institutionalized efforts such as [Mozilla Location Services][mls]
+  (they call it "stumbling," but it's functionally equivalent).
+
+I've dabbled with these methods -- both with apps and jury-rigging raspberry pis.
 As you can see [here][wigle-chicago], it was pretty quick to cover my own 
   neighborhood in Chicago.
 But the issues of coverage are not trivial.
@@ -174,7 +185,7 @@ There are also sampling problems (who runs these tests),
 At the University of Chicago, 
   [Monisha Ghosh][monisha]'s group has developed apps
   for finer-grained maps of mobile broadband spectrum and deployment.
-I see tremendous potential in deploying these apps through a fleet (city vehicles or taxis[^5])
+I see tremendous potential in deploying these apps through a fleet (city vehicles or taxis[^6])
   or a public mapping program like [MAPSCorps][mapscorps].
 
 And there's a ton more to be uncovered, waiting in server logs.
@@ -182,7 +193,7 @@ To my mind, Wikipedia logs would be
   the very best data for measuring the "homework gap":
   it is a high-traffic site
   hosting lightweight pages (no _fancy_ connection is required),
-  of plausibly educationally-oriented materials.[^6]
+  of plausibly educationally-oriented materials.[^7]
 As you might expect (or hope!) Wikipedia guards user privacy in their logs quite strictly,
   and there remains a challenge of IP geolocation, to attribute use and access to demography.
 (This is a problem I'm currently working on.)
@@ -201,8 +212,9 @@ That is what we're setting out to do.
 [^2]: Albeit at coarser geographies, called Public Use Microsample Areas (PUMAs).  These are regions defined to preserve the anonymity of microdata, and contain 100-200k people.
 [^3]: Ookla lays out [similar criticisms][ookla-critique] in a recent piece.
 [^4]: I am still debugging exactly what geographies are available, as many Census block IDs appear to be ill-formed.
-[^5]: A project by the Senseable City Lab at MIT [estimates][scl-taxis] the coverage of taxis as an opportunistic sensor deployment.
-[^6]: It is perhaps interesting to note that for domain-level sites (like Wikipedia), either the sites' own logs or any high-level DNS resolver would do.  [Moura et al][dns-congestion] showed at IMC '20 that in the Netherlands, the concentration of DNS resolution has grown quite extreme.  We might expect it to be even more so in the US / .com TLD.  What this means is that Google and Amazon know if you're using Wikipedia, even if you don't search, because they are likely the ones who are telling you _how to get to Wikipedia_.  
+[^5]: More likely, niche, though it depends on your peer group.
+[^6]: A project by the Senseable City Lab at MIT [estimates][scl-taxis] the coverage of taxis as an opportunistic sensor deployment.
+[^7]: It is perhaps interesting to note that for domain-level sites (like Wikipedia), either the sites' own logs or any high-level DNS resolver would do.  [Moura et al][dns-congestion] showed at IMC '20 that in the Netherlands, the concentration of DNS resolution has grown quite extreme.  We might expect it to be even more so in the US / .com TLD.  What this means is that Google and Amazon know if you're using Wikipedia, even if you don't search, because they are likely the ones who are telling you _how to get to Wikipedia_.  
 
 [harris]:         https://harris.uchicago.edu/
 [csds]:           https://spatial.uchicago.edu/
@@ -252,5 +264,6 @@ That is what we're setting out to do.
 [cc-by-sa]:       https://creativecommons.org/licenses/by-sa/2.0/
 [carto]:          http://carto.com/
 [me]:             https://saxon.cdac.uchicago.edu/
+[wargames]:       https://en.wikipedia.org/wiki/WarGames
 
 
