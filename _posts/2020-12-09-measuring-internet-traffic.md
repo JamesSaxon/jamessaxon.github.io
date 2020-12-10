@@ -185,7 +185,7 @@ However, since this post is already long, here's the short version:
 |---------------------------------|--------------------------|---------------------------------------------------------------|---------------------|---------------------------------|
 | Wired: Switch       <br> ($400)  | Robust                   | Lots of equipment to install & configure.                     | ✔ | None!?               |
 | Wired: pi as Router <br> ($335)      | Flexible and fewer parts | Security concerns (manageable)<br>Measurement device in infrastructure | ✗ | pi CPU<br>USB Dongle |
-| Wireless: sniffing  <br> ($408)      | See neighborhood wifi use & spectrum       | No IP headers  | ✔ | Just _miss_ the data.
+| Wireless: sniffing  <br> ($408)      | See neighborhood wifi use & spectrum       | No IP headers<br>Must hop or monitor channels | ✔ | Just _miss_ the data.
 | Router-based        <br> ($390)      | Easy install<br>Direct access to interfaces for data and wireless params | Changing equipment to measure it!<br>Turris/OpenWRT not super flexible;`tshark` not available | ✗ | Theoretically none. |
 | Software: `arpsoof` <br> ($315)      | Cost<br>Can be "turned on" with active measures | Performance | ✗ | Single link to pi must "double" traffic <br>IP forwarding | 
 
