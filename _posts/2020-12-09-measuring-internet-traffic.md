@@ -333,13 +333,15 @@ Configure a raspberry pi as the router using `iptables`,
 **Strengths and limitations.**
 This is a particularly _elegant_ solution.
 So long the USB can keep up, everything should be Gigabit, and speed should not be an issue
-I have not tested it up to 1 Gbps, but the pi is prety powerful.
+I have not tested it up to 1 Gbps, but the pi is pretty powerful.
 If you also want to be able to do heavy inference, you could 
 add a USB [Coral accelerator][coral] or use a [jetson nano][nano].
 Since this is a wired set-up, you can see all the IP addresses.
 
 There is always a concern about hosing a subject's connection,
   and I haven't done a long test of reliability.
+Security is also a big issue on this one,
+  and I've made included _very_ brief notes on this, below.
 
 **Network topology.**
 The raspberry pi works as a router,
@@ -409,7 +411,7 @@ So far so good.  I can even ssh in.
 
 Now go back and move it off the 192.168.1.1 subnet, 
   to a new static "gateway" address, like 192.168.7.1.
-Then nable IP forwarding via
+Then enable IP forwarding via
 ```
 sudo sysctl -w net.ipv4.ip_forward=1
 ```
@@ -474,7 +476,7 @@ If you want to be able to contact your device,
 In addition, you could restrict access in `/etc/ssh/sshd_config`
   by setting it the `ListenAddress` that you will use.
 You could also turn it towards the local network 
-  with `AllowUsers you@192.168.1.1/241`.
+  with `AllowUsers you@192.168.1.1/24`.
 And you might change the port (`Port`) off of 22.
 
 You could do similar things with `iptables` rules or `ufw`.
@@ -621,7 +623,7 @@ The DNS also seriously fell over --
   and so I forced everything to resolve through Google (sad but true).
 
 At that point, you can log in directly through `ssh`.
-The package manage on OpenWRT is `opkg`.
+The package manager on OpenWRT is `opkg`.
 To my surprise, we can install `tcpdump` but not `tshark` on the router.
 The [instructions on OpenWRT][openwrt-shark] 
   and other forums all talk about running tcpdump over ssh
