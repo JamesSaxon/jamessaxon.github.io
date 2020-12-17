@@ -677,7 +677,7 @@ ARP doesn't have authentication, so each one believes you,
 You can now monitor, modify, or drop that traffic.
 
 Since we want to monitor consumption and not disrupt it, we turn on IP forwarding.
-This is very efficient -- it built into the kernel.
+This is very efficient: it is built into the kernel.
 
 **Strengths and limitations.**
 
