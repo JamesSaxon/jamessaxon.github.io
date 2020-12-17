@@ -211,7 +211,7 @@ All IP traffic to the Internet is visible, so it is easy to create
 Note that in this configuration,
   I do not see internal traffic on the LAN -- 
   between two laptops, for instance.
-But most people do that, anyway.
+But most people don't do that much, anyway.
 
 Because the traffic is _mirrored_ 
   it will not affect the user's connection 
