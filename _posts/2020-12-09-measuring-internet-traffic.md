@@ -638,7 +638,7 @@ You get something similar from `iftop -i br-lan`,
   and something simpler from just `ifconfig`.
 
 Ultimately however, I installed and quite liked [wrtbwmon](wrtbwmon).
-It uses iptables rulles and thus has basically no overhead,
+It uses iptables rules and thus has basically no overhead,
   and can break down consumption by device.
 Updating those instructions,
 * Download the package from [pyvroski/wrbwmon](wrtbwmon-gh).
