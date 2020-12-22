@@ -393,7 +393,7 @@ But if you want to try these in your home, read on!
 ## Scheduling and Logging Tests
 
 I have wrapped the tests described above in a little python script,
-  which you can find on GitHub: 
+  which you can find on [GitHub][netrics].
 
 To run these tests regularly and reliably,
   you'll need device with a wired Ethernet connection to the router.
@@ -501,4 +501,5 @@ The grafana version is shown below.
 [turris]:           https://pypi.org/project/pynetgear-enhanced/
 [openwrt]:          https://openwrt.org/
 [rpi-setup]:        https://github.com/JamesSaxon/neighborhood_broadband/tree/master/rpi
+[netrics]:          https://github.com/JamesSaxon/netrics/blob/master/net_measures.py
 
