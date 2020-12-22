@@ -16,7 +16,7 @@ This means: the devices they use to access the internet,
   and how much bandwidth they really consume.
 Seeing the traffic helps us understand
   what real-world applications require for daily activities.[^1]
-What Internet connection is needed, 
+What Internet connection is needed
   for equitable participation in public education&nbsp;--
   with or without a global pandemic?
 What do students in Chicago Public Schools need?
