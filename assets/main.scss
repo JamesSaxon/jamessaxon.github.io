@@ -30,5 +30,15 @@ figcaption {
 .center {
   display: block;
   margin: 0 auto;
+  text-align: center;
+}
+
+.thumb {
+  width: 100px;
+  padding: 5px;
+}
+
+.img_set {
+  padding: 10px 0px 20px;
 }
 
