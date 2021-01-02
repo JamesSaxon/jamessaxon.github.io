@@ -3,7 +3,7 @@ layout: post
 title:  "Five Ways to Measure Internet Traffic"
 author: Jamie Saxon
 date:   2020-12-09
-categories: broadband internet consumption 
+categories: broadband measurement consumption
 ---
 
 In my [last post][last-post],

@@ -3,7 +3,7 @@ layout: post
 title:  "Measuring Your Home Network"
 author: Jamie Saxon
 date:   2020-12-07
-categories: broadband measurement urban neighborhoods access
+categories: broadband measurement 
 header-includes:
   - \hypersetup{colorlinks,linkcolor=[rgb]{0,0.3,0.8},urlcolor=[rgb]{0,0.3,0.8}}
 ---

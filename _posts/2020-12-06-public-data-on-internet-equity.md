@@ -3,7 +3,7 @@ layout: post
 author: Jamie Saxon
 title:  "Publicly-Available Data on Internet Access and Equity"
 date:   2020-12-06
-categories: broadband equity public data ACS CPS neighborhoods
+categories: broadband equity data 
 header-includes:
   - \hypersetup{colorlinks,linkcolor=[rgb]{0,0.3,0.8},urlcolor=[rgb]{0,0.3,0.8}}
 ---
