@@ -12,9 +12,9 @@ That project got me excited about laser cutting,
   but just as I was getting ramped up, the world shut down.
 Over the past year, I thought a lot about 
   expressing water and waves,
-  and imagining projects I could not satisfactorily execute with an x-acto knife.
+  and imagining projects that I could not satisfactorily execute with an x-acto knife.
 
-I finally got back in for few hours, and 
+I finally got back into HAL for few hours and 
   made a classic laser cutting project: a bathymetric map.
 There are so many wood-cut maps on Etsy that it's not even worth comparing,
   but I was pleased with my result.
@@ -147,7 +147,7 @@ Notwithstanding, some of this "misfire" was appealing.
 This was my first outing since childhood with watercolors, 
   and I learned a good deal from a book 
   by my sister's friend, [Sasha Prood][prood-book].
-I also drew from the many videos of craftsy watercolor techniques, on YouTube.
+I also drew from the many videos of craftsy watercolor techniques on YouTube.
 
 I liked the "bloom" effect created by dropping water with a syringe, 
   but my favorite was to use parchment paper over a complete,

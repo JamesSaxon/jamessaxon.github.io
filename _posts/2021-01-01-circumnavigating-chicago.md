@@ -109,7 +109,7 @@ I put in at 136th Street, though I had originally intended to start from Beaubie
 The last official access heading west is at Worth,
   but I got out at Willow Springs Road.
 The bank under the bridge comes down to the water,
-  and t is used for fishing.
+  and it is used for fishing.
 There is a well-trodden
   path that runs directly to the adjacent parking at Saganashkee Slough.
 There are other places where one might put out (as I later found),
@@ -125,7 +125,7 @@ There is also a 10-year old article in
 There is also a certain amount of Black history down here.
 I was first aware of Altgeld Homes as one of the sites to which
   residents of Cabrini Green were relocated, when that development was demolished.
-This was also a stop on the underground railroad,.
+There was also a stop on the underground railroad at this site.
 Robbins, Illinois (half-way along the trek) 
   is an early Black suburb with an influential history in early Black aviation (in particular).
 [OpenLands][openlands] produced a story map for their [black history trail][afr-heritage].
@@ -150,7 +150,7 @@ An impressive feature of this segment
   (though not one visible from the River)
   is the McCook Reservoir.
 The 3.5 billion-gallon, billion-dollar
-  component the massive [Tunnel and Reservoir Plan][tarp] (TARP)
+  component of the massive [Tunnel and Reservoir Plan][tarp] (TARP)
   holds sewage and run-off to prevent flooding and 
     allow treatment facilities to catch up.
 The reservoir is sandwiched between the Stevenson
@@ -201,7 +201,7 @@ They also have have an outstanding story map
 The City also has a map from [around 2012][city-map].
 
 Several of these resources note the particular dangers of 
-  near aeration stations which create turbulence while reducing buoyancy (of both boats and people!).
+  aeration stations, which create turbulence while reducing buoyancy (of both boats and people!).
 Since these hazards may not be immediately obvious,
   they can be dangerous for paddlers
   and I have noted their locations on the map.
