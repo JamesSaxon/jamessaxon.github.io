@@ -158,7 +158,8 @@ Speedtest chooses the test server with the lowest round-trip latency (roughly, t
   and others rely on CDNs, resources are not always close at hand.
 
 #### SamKnows Whiteboxes.
-Data collected by SamKnows for the FCC are in some ways a gold standard.
+Data collected by SamKnows for the FCC are in some ways a gold standard,
+  although their measurements rely on the M-Lab infrastructure.
 This program has been running since 2011
   and includes a [bevy of continuous, open-sourced tests][samknows-tests] on
   dedicated hardware that they call "whiteboxes":
@@ -231,7 +232,7 @@ That is what we're setting out to do.
 [^1]: The FCC data include, among other fields, advertised and contractual up and downstream bandwidths, per supplier (DBA, holding company, etc.), and whether service is provided to commercial or consumer properties.  In practice, I found that the contractual numbers -- naively more apposite -- are often basically missing, and so the advertised levels are to be preferred.
 [^2]: Albeit at coarser geographies, called Public Use Microsample Areas (PUMAs).  These are regions defined to preserve the anonymity of microdata, and contain 100-200k people.
 [^3]: Ookla lays out [similar criticisms][ookla-critique] in a recent piece.
-[^4]: I am still debugging exactly what geographies are available, as many Census block IDs appear to be ill-formed.
+[^4]: Census block IDs are often ill-formed in the data; SamKnows is currently working to correct this.
 [^5]: More likely, niche, though it depends on your peer group.
 [^6]: A project by the Senseable City Lab at MIT [estimates][scl-taxis] the coverage of taxis as an opportunistic sensor deployment.
 [^7]: It is perhaps interesting to note that for domain-level sites (like Wikipedia), either the sites' own logs or any high-level DNS resolver would do.  [Moura et al][dns-congestion] showed at IMC '20 that in the Netherlands, the concentration of DNS resolution has grown quite extreme.  We might expect it to be even more so in the US / .com TLD.  What this means is that Google and Amazon know if you're using Wikipedia, even if you don't search, because they are likely the ones who are telling you _how to get to Wikipedia_.  
