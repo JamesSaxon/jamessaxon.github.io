@@ -33,7 +33,7 @@ Here's the basic answer:
   are the most-intense uses of their home Internet connection.
 * Those services generally consume and require about **1 Mbps** in each direction of transmission.  (Obviously, streaming is one-way while conferencing is two-way, if your video is on.)
 
-The standard definition of "broadband" is "25/3" -- 25 Mbps up and 3 Mbps down.
+The standard definition of "broadband" is "25/3" -- 25 Mbps down and 3 Mbps up.
 If you have two people in simultaneous meetings, that means 2 Mbps each way;
   3 people could use 3 Mbps.
 That will not saturate a "basic" broadband link in the downstream direction,
