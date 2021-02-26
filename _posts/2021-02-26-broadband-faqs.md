@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Jamie Saxon, Tarun Mangla, Nicole Marwell, Nick Feamster
+author: Jamie Saxon, Tarun Mangla, Julia Lane, Nicole Marwell, Nick Feamster
 title:  "Broadband Terms, Questions, and Myths"
 date:   2021-02-26
 categories: broadband data
@@ -97,7 +97,7 @@ Fiber, in the context of the Internet, is a type of cable made out of glass or p
 
 Informally, broadband Internet is just fast Internet.  This is defined in terms of the amount of data you can transmit per second.  Currently, a broadband connection is one with a “bandwidth” of at least 25 Mbps for downloads and 3 Mbps for upload.  The unit, Mbps or “megabits per second” sounds like a lot, but we can convert it into familiar units.
 
-A megabit is just one eighth of a megabyte (and a gigabit is one eighth of a gigabyte).  That means that with a 25 Mbps connection, you can download 1 Gigabyte of data in 5.3 minutes (or 0.1875 Gigabytes in one minute).  For comparison, a typical video conference uses about 1-1.5 Mbps in each direction, and a normal Netflix video also uses about 1 Mbps.  The Federal Communications Commission offers a table of how much bandwidth they think various activities require.
+A megabit is just one eighth of a mega<em>byte</em>, and a <em>gigabit</em> (1000 megabits) is one eighth of a giga<em>byte</em>.  That means that with a 25 Mbps connection, you can download 1 Gigabyte of data in 5.3 minutes (or 0.1875 Gigabytes in one minute).  For comparison, a typical video conference uses about 1-1.5 Mbps in each direction, and a normal Netflix video also uses about 1 Mbps.  The Federal Communications Commission offers a [table](https://www.fcc.gov/consumers/guides/broadband-speed-guide) of how much bandwidth they think various activities require.
 
 <a name="faq-difference">**What is the difference between fixed broadband and mobile internet? Why are they not the same?**</a>
 
