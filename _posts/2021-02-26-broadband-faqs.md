@@ -214,11 +214,11 @@ For the bigger picture: Cellular carriers and online services (e.g., Google, Fac
 
 Unfortunately, the coverage of Internet Service Providers is much more geographically constrained than cell phone carriers.  The coverage maps for four of the biggest ISPs in Chicago – Comcast, AT&T, RCN, and WOW – are shown below, based on [data](https://broadbandmap.fcc.gov/#/location-summary?version=dec2019&tech=acfosw&speed=25_3) from the Federal Communication Commission (FCC).
 
-The FCC data are [known](https://dl.acm.org/doi/10.1145/3419394.3423652) to sometimes report services available in places where they are not.  Still, it is clear that RCN and WOW do not serve the entire city.
+The FCC data are [known](https://dl.acm.org/doi/10.1145/3419394.3423652) to sometimes report services as available in places where they are not.  Still, it is clear that RCN and WOW do not serve the entire city.
 
 ![ISP Availability](/assets/img/isps.png)
 
-In addition, the speeds available from different ISPs may also differ.  Single ISPs may also offer different speeds in different neighborhoods, depending on the infrastructures that they have installed.
+In addition, the speeds available from different ISPs may also differ, and single ISPs may offer different speeds in different neighborhoods, depending on the infrastructures that they have installed.
 
 
 <a name="myth-wifi">**Myth: If I have a weak Wi-Fi signal in my apartment, is it because my internet service provider is not providing the internet speeds that my contract dictates?**</a>
