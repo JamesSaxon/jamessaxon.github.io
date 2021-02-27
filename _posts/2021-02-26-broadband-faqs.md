@@ -221,7 +221,7 @@ The FCC data are [known](https://dl.acm.org/doi/10.1145/3419394.3423652) to some
 In addition, the speeds available from different ISPs may also differ, and single ISPs may offer different speeds in different neighborhoods, depending on the infrastructures that they have installed.
 
 
-<a name="myth-wifi">**Myth: If I have a weak Wi-Fi signal in my apartment, is it because my internet service provider is not providing the internet speeds that my contract dictates?**</a>
+<a name="myth-wifi">**Myth: If I have a weak Wi-Fi signal in my apartment, it is because my internet service provider is not providing the internet speeds that my contract dictates.**</a>
 
 ISPs generally lease equipment with their broadband services that are matched to outperform the contracted bandwidth.  If you own your own equipment, that could be the issue, as it might be providing a Wi-Fi signal that is too weak. But even if you rent from the ISP, you may be able to improve your Wi-Fi signal through very simple steps, such as moving the Wi-Fi away from big metal objects, putting it up high, like on a bookshelf, or simply moving closer to the Wi-Fi access point. Wi-Fi is known to not travel as well through stone, brick, and other materials common in Chicago housing as compared to traveling through the open air, or even materials like wood.
 
