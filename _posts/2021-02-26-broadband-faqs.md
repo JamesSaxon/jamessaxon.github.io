@@ -105,7 +105,7 @@ Mobile broadband is delivered by a mobile provider to your phone on radio waves.
 
 [^1]: Satellite is a bit of a special case, that we’ll leave to the side.
 
-In addition to the method of delivery (radio versus cable) and speed of data, another distinction is how much data costs. Comcast Xfinity offers 1200 gigabytes per month of data with basically any of its fixed broadband plans, whereas AT&T caps monthly data on mobile plans at [30 GB](https://www.att.com/wireless/) and Verizon imposes them at around [15 GB](https://www.verizon.com/support/verizon-plan-unlimited-faqs/) (though you can always pay more).
+In addition to the method of delivery (radio versus cable) and speed of data, another distinction is how much data costs. Comcast Xfinity offers 1200 gigabytes of data per month with basically any of its fixed broadband plans, whereas AT&T caps monthly data on mobile plans at [30 GB](https://www.att.com/wireless/) and Verizon imposes them at around [15 GB](https://www.verizon.com/support/verizon-plan-unlimited-faqs/) (though you can always pay more).
 
 Ultimately, however, both mobile and fixed broadband connect to the same Internet.
 
