@@ -13,7 +13,7 @@ This document is presented in three sections: [basic terms](#terms-and-definitio
 ### Terms and Definitions
 
 <a name="broadband">**Broadband**</a>:
-Broadband is, in short, fast Internet.  We’ll get into the details below, but “fast” usually means that the connection is sufficient to send and receive multiple video streams at the same time. The Federal Communications Commission (FCC) currently defines broadband as 25 Mbps download speed and 3 Mbps upload speed or bandwidth.
+Broadband is, in short, fast Internet.  We’ll get into the details below, but “fast” usually means that the connection is sufficient to send and receive multiple video streams at the same time. The Federal Communications Commission (FCC) currently defines broadband as Internet with a download speed (or bandwidth) of at least 25 Mbps and an upload speed of at least 3 Mbps.
 
 <a name=bandwidth>**Bandwidth**</a> or <a>**Speed**</a>:
 These are technically slightly different, but both measure how much data can be transmitted by an Internet connection.
@@ -101,7 +101,7 @@ A megabit is just one eighth of a mega<em>byte</em>, and a <em>gigabit</em> (100
 
 <a name="faq-difference">**What is the difference between fixed broadband and mobile internet? Why are they not the same?**</a>
 
-Mobile broadband is delivered by a mobile provider to your phone on radio waves.  In the City of Chicago, it is generally available anywhere with cell phone service.  By contrast, fixed broadband enters your house on a cable: coaxial (as for cable TV), “fiber,” or in very old cases, telephone lines.[^1] In high-density places like the Loop, mobile and fixed broadband speeds can be comparable, but in most places fixed broadband is faster and more reliable: with fixed broadband, you are paying for speed and reliability Internet in a specific place.  The overall difference in speeds is also narrowing with 5G (5th Generation) mobile, with speeds that can exceed 1 Gbps (1000 Mbps).  However, phones capable of achieving those speeds are currently [quite expensive](https://www.techradar.com/best/best-5g-phones).
+Mobile broadband is delivered by a mobile provider to your phone on radio waves.  In the City of Chicago, it is generally available anywhere with cell phone service.  By contrast, fixed broadband enters your house on a cable: coaxial (as for cable TV), “fiber,” or in very old cases, telephone lines.[^1] In high-density places like the Loop, mobile and fixed broadband speeds can be comparable, but in most places fixed broadband is faster and more reliable: with fixed broadband, you are paying for speed and reliability in a specific place.  The overall difference in speeds is also narrowing with 5G (5th Generation) mobile, with speeds that can exceed 1 Gbps (1000 Mbps).  However, phones capable of achieving those speeds are currently [quite expensive](https://www.techradar.com/best/best-5g-phones).
 
 [^1]: Satellite is a bit of a special case, that we’ll leave to the side.
 
