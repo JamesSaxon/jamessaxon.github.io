@@ -119,7 +119,7 @@ For example, I find it hard to believe that among the twenty largest US cities,
   San Francisco is the [worst-provisioned][ntia-sf-gist] in Internet.
 
 #### Distributed, web-based measurements.
-[Ookla][ookla] ([speedtest][speedtest]) and 
+[Ookla][ookla] ([speedtest][speedtest] & [data][speedtest-aws]) and 
   [M-Labs][mlab] ([speed test][mlab-speedtest]) 
   both perform distributed measurements of network latency, jitter, and throughput
   via the browser and dedicated apps.
