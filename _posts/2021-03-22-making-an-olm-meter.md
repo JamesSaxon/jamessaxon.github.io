@@ -53,7 +53,7 @@ Here, I'll describe a box with a
 It looks like this:
 
 <figure>
-  <a href="/assets/img/olm/1k/13_done.jpg" data-lightbox="olm-assembly" data-title="And now all done -- and off to the park!"><img class=center height=350px src="/assets/img/olm/1k/13_done.jpg" /></a>     
+  <a href="/assets/img/olm/1k/13_done.jpg" data-lightbox="olm-assembly" data-title="A completed 'Olm-meter.'"><img class=center height=350px src="/assets/img/olm/1k/13_done.jpg" /></a>     
 <figcaption>
 <p class=center>
 A completed 'Olm-meter.'
