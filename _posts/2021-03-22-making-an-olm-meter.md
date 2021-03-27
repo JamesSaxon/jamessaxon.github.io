@@ -38,7 +38,7 @@ In the past, I've addressed this problem in three ways:
 Ultimately, these exercises gave me confidence with the data.
 But Luc Anselin (my advisor in CSDS) 
   kept pushing on this question,
-  and from an abundance of ignorance, 
+  and with abundant ignorance, 
   I responded that we could create other groundtruths
   using electronics or computer vision, 
   and compare those to counts from the GPS location data.
@@ -125,7 +125,7 @@ Friends at the SAIC introduced me to these, and they are great.
 I began with the Wi-Fi based [Argon][argon],
   but jumped over to the 3G [Electron][electron]
   to go to the field.
-It is notable that particle is now [free][particle-free]
+It is notable that Particle is now [free][particle-free]
   for up to 100 devices, which is amazing.
 
 #### Part List
@@ -157,11 +157,11 @@ There are many Arduino tutorials online for the
   [HC-SR501][sr501-tutorial] (examples in links).
 This project simply requires you to interleave those two parts,
   apply a little bit of processing, and upload the variables.
-For example, two ultrasonic sensor "counts" (distance below threshold)
+For example, two "counts" from an ultrasonic sensor (distance below threshold)
   20 ms apart do not count as "separate people."
-So we must decide what thresholds to apply and 
+We must decide what thresholds to apply and 
   what separation in time counts as a "new" person.
-I aggregate counts for a minute, and then push a fragment of Influx line protocol:
+I aggregate counts for a minute, and then push a fragment of Influx line protocol to the cloud:
 ```
 snprintf(pub_var, sizeof(pub_var), "p=%d,s=%d", pir_count, ultrasonic sensor_count);
 Particle.publish("park_count", pub_var);
