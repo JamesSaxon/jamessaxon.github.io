@@ -152,11 +152,14 @@ If you _do_ decide to replace the ISP rental,
    You can read about these distinct functions, [here][terms-myths].
    This said, you can easily buy a box that combines these three separate functions.
 2. Whatever combo (or set of boxes) you buy,
-    make sure that it is /they are rated to support speeds
+    make sure that all components can support speeds
     well in excess of your current contract.
    ISPs do tend to bump up speeds over time, and 
      you won't save yourself any money
      if you end up buying another router, next year.
+   Comcast and AT&T do ensure that the device
+     covers your contract, if you rent.
+   If you buy, you're responsible for it.
 3. The choice among available routers can be a little daunting.
    PC Magazine has a good and up-to-date
     [review][pcmag] of good Wi-Fi routers for 2021, 
