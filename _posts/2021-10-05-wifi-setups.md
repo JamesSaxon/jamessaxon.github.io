@@ -115,12 +115,12 @@ If your Wi-Fi is up high,
 
 ### Buy your own Wi-Fi access point!
 
-This one is a little bit complicated,
+This one is a little bit more complicated,
   but it can potentially save you a ton of money.
 
-Most people yrent a modem/router/Wi-Fi combo
+Most people rent a modem/router/Wi-Fi combo
   from their Internet Service Provider (ISP).
-I used to.
+I certainly used to.
 And in some respects, it simplifies things:
   one less thing to worry about,
   one less decision to make.
