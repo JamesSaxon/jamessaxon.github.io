@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Jamie Saxon
-title:  A Physicist Installs his Wi-Fi
+title:  A Physicist Installs Wi-Fi
 date:   2021-10-05
 categories: broadband performance wifi
 ---
