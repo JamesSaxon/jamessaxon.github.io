@@ -1,0 +1,194 @@
+---
+layout: post
+author: Jamie Saxon
+title:  A Physicist Installs his Wi-Fi
+date:   2021-10-05
+categories: broadband performance wifi
+---
+
+Over the past year in the Center for Data and Computing, 
+  we've built some tools for measuring home Internet performance.
+I've described this in past posts on [broadband][broadband].
+With those tools installed in our homes,
+  we can rigorously measure what you already know:
+  the Wi-Fi stinks!
+The speeds that you pay for from the ISP
+  often fail to reach the devices that you use!
+
+A number of collaborators and community members have asked
+  what they can do to improve this situation.
+The good news is that a few simple changes
+  can improve your connection, and potentially save you money.
+This post will explain the tricks, but here they are:
+
+1. Place your Wi-Fi far from big hunks of metal and other electronics, _especially_ your microwave.
+2. If at all possible, put it high up, like on a cabinet or a bookshelf.
+3. Buy your own modem/router combo.
+
+### Move the Wi-Fi away from metal and microwaves!
+
+This is probably the most important point.
+Your Wi-Fi transmits data as electromagnetic waves,
+  and metal can reflect or shield these waves.
+Look, I used to work on this physics experiment:
+
+<img src="/assets/img/trt_annotated.jpg" alt="Transition Radiation Tracker" style="padding:10px" height=250px class=center />
+
+It is wrapped in metal.
+All the beautiful, orange copper is called a Faraday cage.
+Its purpose of this meal wrapping 
+  is to block electromagnetic radiation
+  from interfering with the sensitive electronics inside.
+Simply put, metal blocks electromagnetic waves.
+
+Look, this is where I used to have my Wi-Fi:
+
+<img src="/assets/img/wifi_placement.jpg" alt="Old placement" style="padding:10px" height=470px class=center />
+
+I had it there because that is where the cable came out of the wall,
+  and about as far as it reached.
+But it was nearly engulfed in sheets and chunks of metal:
+  the dishwasher, the oven, and the radiator!
+It's not _quite_ a Faraday cage, but it was still stupid,
+  and it certainly blocked the signal.
+Get smart!  Move it away!
+
+Next, other equipment, specifically 
+  microwaves and old, cordless phones share space 
+  ("spectrum") with your Wi-Fi and can interfere with its signals.
+Your Wi-Fi spits out waves at two frequencies or _bands_:
+  2.4&nbsp;GHz and 5&nbsp;GHz.
+Two bands -- more data!
+But the bands also serve different purposes.
+Lower frequencies can penetrate through stuff --
+  walls, furniture, you -- better than high frequencies,
+  but you can embed more data in the high frequency waves.
+So: 5&nbsp;GHZ is good for speed while 2.4&nbsp;GHz is good for coverage.
+
+Here's a little wrinkle, though.
+The food that you like to heat in your microwave is largely water.
+By an accident of nature, while fairly high frequencies (10-100&nbsp;GHz)
+  are good at dumping heat (power) into water,
+  they do not penetrate deep _into_ it.
+(Interesting physics [here][microwave-physics].)
+Since you want to heat the whole bowl of rice,
+  history stumbled on a lower value, 2.45&nbsp;GHz, for microwave ovens.
+The FCC let Wi-Fi use the spectrum too.
+
+What's the meaning of all this?
+Well there are two thick, brick walls
+  between the Wi-Fi in my kitchen
+  and the back bedroom of my apartment.
+When I connect to the Wi-Fi from the bedroom,
+  my computer sensibly chooses the 2.4&nbsp;GHz band 
+  since the signal from that lower-frequency signal
+  is stronger there.
+Then, around 11am or noon
+  as my neighbors start microwaving food (covid, so we're all home),
+  there's a ton of interference on that band.
+My computer switches over to 5&nbsp;GHz, 
+  but that signal can't make it through the walls.
+So my signal stinks.
+
+Do I _actually_ see "lunch-time blues?"
+Yes, yes I do.
+
+What's to be done?
+A reliable solution,
+  if it's possible in your home,
+  is to route an Ethernet cable
+  to your home office.
+If that's not possible, you can look
+  into signal repeaters or mesh networks -- 
+  but I won't get into those here.
+
+### Raise your Wi-Fi to the sky!
+
+The stuff in your apartment is probably on the floor,
+  because well, _gravity_.
+If your Wi-Fi access point is on the floor (as mine was),
+  the signals will likely have to go through or around that stuff,
+  to reach you.
+If your Wi-Fi is up high, 
+  the signal can travel through less stuff.
+
+### Buy your own Wi-Fi access point!
+
+This one is a little bit complicated,
+  but it can potentially save you a ton of money.
+
+Most people yrent a modem/router/Wi-Fi combo
+  from their Internet Service Provider (ISP).
+I used to.
+And in some respects, it simplifies things:
+  one less thing to worry about,
+  one less decision to make.
+But Comcast charges $14 a month for this, $168 a year.
+For just a little more money, 
+  you can buy yourself a better modem that you will own for years.
+
+This saves you money not only on the rental itself;
+  it makes it easier to maintain a cheaper contract.
+When the "initial rate" of an ISP contract runs out, usually after 12 months,
+  you can simply call and tell them to either reset your rate or cancel your contract.
+Since you own the modem, there's no equipment to return.
+Then just have your spouse, partner, or room-mate 
+  sign up for service again at the same address, or do it for them.
+In the last few years, Comcast twice just gave me the service price I wanted.
+Last year and on behalf of my in-laws,
+  I had to create a new contract in the "other" spouse's name.
+But there was never an interruption in service.
+By owning my modem, I pay just $25 a month
+  for our home Internet, and it is perfectly adequate.
+My annual gab-fest with Comcast customer service,
+  always performed with a glass of wine,
+  takes about an hour but has saved me up to $500 per year.
+Owning a modem makes the call a lot easier.
+
+If you _do_ decide to replace the ISP rental,
+  there are a few things that you need to be aware of.
+1. You need not just a modem or a router,
+     but a modem, router, and Wi-Fi access point.
+   You can read about these distinct functions, [here][terms-myths].
+   This said, you can easily buy a box that combines these three separate functions.
+2. Whatever combo (or set of boxes) you buy,
+    make sure that it is /they are rated to support speeds
+    well in excess of your current contract.
+   ISPs do tend to bump up speeds over time, and 
+     you won't save yourself any money
+     if you end up buying another router, next year.
+3. The choice among available routers can be a little daunting.
+   PC Magazine has a good and up-to-date
+    [review][pcmag] of good Wi-Fi routers for 2021, 
+    but these will also require a separate modem.
+   If you're after simplicity, I have recommended
+     this [combo from Netgear][netgear]
+     for speeds up to about half a gigabit per second (500&nbsp;Mbps).
+   If you're looking for something snazzy,
+     Ubiquiti makes good equipment with excellent software,
+     but the learning curve may be steeper.
+   Personally, I have been very happy with my [R6900P router][my-router],
+     also from Netgear, paired with [this modem][my-modem].
+
+
+[my-modem]:           https://www.amazon.com/gp/product/B06XH46MWW/
+[my-router]:          https://www.amazon.com/gp/product/B07C65K9H9/
+[netgear]:            https://www.amazon.com/NETGEAR-Nighthawk-Certified-Xfinity-Spectrum/dp/B00ZUPOF7Y/
+[terms-myths]:        {% post_url 2021-02-26-broadband-faqs %}
+[broadband]:          https://jamessaxon.github.io/broadband/
+[net-data]:           {% post_url 2020-12-06-public-data-on-internet-equity %}
+[net-measurements]:   {% post_url 2020-12-07-basic-measurements-of-access-networks %}
+[net-traffic]:        {% post_url 2020-12-09-measuring-internet-traffic %}
+[net-traffic-switch]: https://jamessaxon.github.io/broadband/measurement/consumption/2020/12/09/measuring-internet-traffic.html#1-wired-hardware-switch-mirroring
+[how-much]:           {% post_url 2021-02-01-how-much-bandwidth-for-video %}
+[comcast-ie]:         https://www.internetessentials.com/covid19
+[apple-resp]:         https://www.ietf.org/archive/id/draft-cpaasch-ippm-responsiveness-00.html
+[mapping-mitigating]: https://cdac.uchicago.edu/news/mapping-and-mitigating-the-urban-digital-divide/
+[data-org]:           https://data.org/
+[oplat]:              https://github.com/kyle-macmillan/OpLat
+[speedtest]:          https://www.speedtest.net/
+[mlab]:               https://speed.measurementlab.net/#/
+[microwave-physics]:  http://www.sfu.ca/phys/346/121/resources/physics_of_microwave_ovens.pdf
+[pcmag]:              https://www.pcmag.com/picks/the-best-wireless-routers
+
+
