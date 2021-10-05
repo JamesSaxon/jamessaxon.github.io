@@ -27,10 +27,13 @@ What has changed is that there are more tests,
   (thanks chiefly to Guilherme Martins).
 I've been beta-testing our setup 
   in my own home for the last six months.
+It's the little black box here, the raspberry pi:
+
+<img src="/assets/img/home_performance/netrics_install.jpg" alt="My netrics device" style="padding:10px" height=250px class=center />
+
 In this post, I'll showcase what we can understand or learn
   about Internet performance by examining a single home.
 In doing this, I'll try to illustrate the practical meaning of our measurements.
-
 In a way, this feels a lot like looking at a "FitBit"
   for my home network: it gives a sense of baseline health,
     anomalies, and my standing as compared with the population.
@@ -43,6 +46,7 @@ But I find the longer term picture quite engrossing,
   especially changes and anomalies.
 We can watch the Internet evolve
   see how it fails, and diagnose failures.
+
 As we extend to households across the city,
   it will be exciting to see how performance varies across the city.
 
