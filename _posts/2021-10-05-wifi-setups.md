@@ -36,7 +36,8 @@ Look, I used to work on this physics experiment:
 
 It is wrapped in metal.
 All the beautiful, orange copper is called a Faraday cage.
-Its purpose of this meal wrapping 
+(Not the support cage, the shiny stuff.)
+The purpose of this metal wrapping 
   is to block electromagnetic radiation
   from interfering with the sensitive electronics inside.
 Simply put, metal blocks electromagnetic waves.
