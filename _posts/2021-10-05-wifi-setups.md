@@ -158,7 +158,7 @@ If you _do_ decide to replace the ISP rental,
      you won't save yourself any money
      if you end up buying another router, next year.
    Comcast and AT&T do ensure that the device
-     covers your contract, if you rent.
+     is adequate for your contract, if you rent.
    If you buy, you're responsible for it.
 3. The choice among available routers can be a little daunting.
    PC Magazine has a good and up-to-date
@@ -172,6 +172,14 @@ If you _do_ decide to replace the ISP rental,
      but the learning curve may be steeper.
    Personally, I have been very happy with my [R6900P router][my-router],
      also from Netgear, paired with [this modem][my-modem].
+
+A little caveat on all this.
+As I've said: Comcast or AT&T _should_
+  ensure that whatever they rent to you is adequate for your subscription.
+If that were true, this method would save you money but not improve speeds.
+However, in my own experience,
+  I was able to improve my experience and speeds measured 
+  with the equipment I bought.
 
 
 [my-modem]:           https://www.amazon.com/gp/product/B06XH46MWW/
