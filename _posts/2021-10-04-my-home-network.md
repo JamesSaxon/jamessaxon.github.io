@@ -16,32 +16,33 @@ In January, we received
   [data.org][data-org],
   for measurements of Internet performance in Chicago neighborhoods.
 We have just shipped devices to 50 households across Chicago.
-Over the next few months, we will get a much-better 
-  baseline view of variation in performance across the city.
+Over the next few months, we will begin to accumulate a detailed
+  view of variation in performance across the city.
 
 Our measurement devices largely follow the strategies
   that I described in my post,
   [Measuring Your Home Network][net-measurements].
 What has changed is that there are more tests,
   they are better validated, and the infrastructure grew up
-  (thanks to Guilherme Martins).
+  (thanks chiefly to Guilherme Martins).
 I've been beta-testing our setup 
-  in my own home, for the last six months.
+  in my own home for the last six months.
 In this post, I'll showcase what we can understand or learn
-  about Internet performance, by examining a single home.
-In doing this, I'll aim to describe why each measurement matters in practice.
+  about Internet performance by examining a single home.
+In doing this, I'll try to illustrate the practical meaning of our measurements.
 
 In a way, this feels a lot like looking at a "FitBit"
   for my home network: it gives a sense of baseline health,
     anomalies, and my standing as compared with the population.
 The short term values are sort of "incidentally interesting" --
-  they illustrate the structure of the Internet and my use of it:
-  I can see diurnal cycles (sleep and and work),
+  they illustrate the structure of the Internet and my use of it.
+I can see diurnal cycles (sleep and and work),
   geographic and topological structure of the Internet,
   and the limitations of my home network.
-The long term picture and the changes
-  are quite interesting: we can watch the Internet evolve
-    and see how it fails (and diagnose failures).
+But I find the longer term picture quite engrossing,
+  especially changes and anomalies.
+We can watch the Internet evolve
+  see how it fails, and diagnose failures.
 As we extend to households across the city,
   it will be exciting to see how performance varies across the city.
 
@@ -70,7 +71,7 @@ It is the thing that defines your "tier" of Internet service,
   and it is how the FCC defines broadband Internet (25 Megabits per second down, 3 up).
 Here is my downstream bandwidth, over the last six months:
 
-![Downstream performance.][/assets/img/home_performance/long_term_downstream.png]
+![Downstream performance.](/assets/img/home_performance/long_term_downstream.png)
 
 You can see that Comcast upped my ($25/month) contract
   from 30 Mbps in the downstream direction, to 60 Mbps, 
@@ -82,12 +83,12 @@ I suspect that they did _that_ (upped the "essentials" package to 50/5 Mbps),
   and speed is not usually actually the issue.
 I digress: you can see that my Internet got faster.
 
-You can also see that we run three different tests:
-  Ookla Speedtest, M-Lab's NDT7, and a UDP test through iperf3.
+You can also see that we run three different tests.
 The Internet uses multiple protocols to transfer data,
   and we are testing the ones commonly used for normal files (images, text, etc.)
   as well as video conferencing and streaming.
-But you can also see that while the overall picture is consistent, 
+(We've deployed Ookla's Speedtest, M-Lab's NDT7, and a UDP test through iperf3.)
+While the overall picture is consistent, 
   there is far more "noise" in the measurements from M-Lab -- 
   the measurements bounce around far more than they do
   for Ookla or iperf, especially in July.
@@ -115,10 +116,10 @@ More recently, we see that bandwidths are
 The next question is how long it takes
   for a message you send to some Internet server
   to receive a response.
-Of course, if you submit a search query to Google,
-  you are sending _many_ messages,
-  and potentially asking the server to do some work, as well:
-  you are getting images, text, query results, and so forth.
+If you submit a search query to Google,
+  you are sending _many_ messages, receiving _many_ responses
+  and potentially asking the server to do some work, as well.
+You are receiving text, images, formatting, query results, and so forth.
 At the simplest level, we are interested in just the _time_
   that it takes to reach a server and for it to respond;
   this is called the _latency_, or round trip time (RTT).
@@ -145,14 +146,16 @@ In other words, Google is probably
 Because I've had my setup installed for more than half a year,
   we can begin to see changes in the network.
 On June 3, pretty much all latencies dropped by two milliseconds.
-There were also a smaller dropsat the beginning of February, 
+There were also a smaller drops at the beginning of February
   and at the end of April,
   more visible in averages than minima.
-This clearly, was some sort of Comcast upgrade.
+This was clearly some sort of upgrade at Comcast.
 Coincident with these drops in latency,
   the number of "hops" or distinct, routable internet (IP) addresses
   between me and Google dropped, from 13-15, to 12-14, to 11-13.
-The _topology_ affects the performance.
+The _topology_ of the Internet and 
+  the paths that messages take across it 
+  affect the performance.
 
 <img src="/assets/img/home_performance/google_min.png" alt="Google minimum RTT" height="240" class=center />
 
@@ -168,14 +171,16 @@ Around September 21,
   experiencing longer and unstable response times.
 Though Amazon has plenty of its own servers,
   its storefront is hosted alongside the Tribune, on the Akamai CDN.
+Since the other latencies didn't change,
+  this suggests a problem at Akamai.
 
 After that, we have servers on the Measurement Lab network,
   in cities across the US.
 Since these signals have to travel farther to reach their destinations,
   they take longer to do so.
-Embedded in amongst this heap, is Wikipedia, which does not use a CDN.
+Embedded in amongst this heap is Wikipedia, which does not use a CDN.
 All of its servers are in Virginia,
-  and any request must therefore trek to the East Coast and back.
+  and any request must trek to the East Coast and back.
 
 Finally, there is are a number of moments in time (September 26, for example),
   when _everyone's_ averages get long.
@@ -191,7 +196,7 @@ Engineers at Apple have [argued][apple-resp] that this is a better
   measure of actual performance, because if
   I'm using my own network, there's probably 
   other stuff going on too!
-They invert latency under load, and call it "responsiveness."
+They invert latency under load and call it "responsiveness."
 Because I measure consumption continuously 
   on my own network (we don't and indeed _can't_ do this for other users),
   we can conclusively confirm that in my case,
@@ -212,26 +217,26 @@ As you can see, the latencies under upstream or downstream load&nbsp;--
 ### Outages.
 
 One big limitation of using "normal" speedtests or even latencies
-  as a metric for the quality of an Internet connection,
-  is that the metrics don't even _exist_,
+  as a metric for the quality of an Internet connection
+  is that the metrics don't even _exist_
   when your connection is at its worst.
-You can't run a Speedtest or test a latency, when your connection is down!
-But since our devices are always on,
-  and check their connectivity to the Internet every five minutes,
+You can't run a Speedtest or test a latency when your connection is down!
+But since our devices are always on
+  and test their connectivities to the Internet every five minutes,
   we can use them to measure how often (and where in the city)
   the Internet is completely out.
 I'll call this "reachability."
 Can we reach Google, for instance, or not?
 
 I tested this feature a bunch,
-  hence, many "dips" from 1 to 0.
-And once I accidentally, unplugged the router instead of an appliance,
-  and the Internet went out for the night.
+  hence, many "dips" from 1 (on) to 0 (off) in the plot below.
+Further, I once unplugged the router instead of an appliance,
+  accidentally shutting off our Internet for the night.
 But you can see that Comcast _actually_ went out in my home for about three days (!),
   from September 4-7.
 They eventually sent a technician.
 We then learned that a dozen other units in my apartment block were also out due to loose wires,
-  even though they initially said that "there are no outages in your area."
+  even though they Comcast initially declared that "there are no outages in your area."
 
 <img src="/assets/img/home_performance/reachability.png" alt="Google reachability" height="200" class=center />
 
@@ -248,21 +253,21 @@ If you go to [speedtest.net][speedtest] or [M-Lab][mlab]
   and try to test your connect while connected over Wi-Fi,
   the result of your test will be the minimum 
   of _Wi-Fi's_ throughput and the speed delivered by your ISP.
-So you may _see_ a speed of 300&nbsp;Mbps evn though you're paying
+So you may _see_ a speed of 300&nbsp;Mbps even though you're paying
   for 400&nbsp;Mbps.
 Then, when you call Comcast to complain, 
   they can rightly point out that you have not given them _any_
   evidence that the low speed is actually _their fault_!
 
 By wiring our devices to your router, 
-  we addres that objection directly.
+  we address that objection directly.
 But that means that we can't see the speeds that _you_ actually experience!
-To address this, 
+To measure _that_, 
   we run an NDT7 utility (server) directly on your local network.
 (It is only accessible locally.)
 By visiting a local dashboard that we developed,
   or by installing a Chrome extension, 
-  the speed from your laptop through your router, to the device 
+  the speed from your laptop through your router and to the device 
   can be measured.
 Since the connection between the router and the "netrics"
   device will reach 1000 Mbps 
@@ -273,38 +278,43 @@ Since the connection between the router and the "netrics"
 This is extremely cool, because it allows you to know
   _who_ is responsible when your Internet is slow.
 Even with a very modest connection (60/5&nbsp;Mbps),
-  the culprit is _almost always_ the Wi-Fi for me.
+  the culprit in my home is _almost always_ the Wi-Fi.
 That's true even _after_ I upgraded to a very good Wi-Fi access point,
-  though that helped a lot.
+  though that upgrade helped a lot.
 In the kitchen or the living room, next to the router, my in-network speed can be 450-500&nbsp;Mbps,
   but in the bedroom, the speed can drop to 10-20&nbsp;Mbps, 
-  though it's typically more like 50&nbsp;
+  though it's typically more like 50&nbsp;Mbps.
 Anyway, the tool looks like this:
 
 <img src="/assets/img/home_performance/wifi_bw.png" alt="Network bandwidth" height="100" class=center />
 
 From a policy angle, this is super important.
-President Biden's _American Rescue Plan_ 
+President Biden's _American Rescue Plan_ (ARP)
   earmarks a ton of money for improving broadband Internet performance.
 But what if the bottleneck is not the fiber in the street
   but the Wi-Fi in your home?
-Perhaps those dollars should go not only to fiber and community networks
+Perhaps those ARP dollars
+  should go not only to fiber and community networks
   (worthwhile to be sure!),
-  but also to deploying Wi-Fi for large buildings (HOA, for example)
+  but also to deploying Wi-Fi for large buildings,
   so that the delivered capacity is not simply squandered 
   in those last feet across an apartment.
+For example, having trained technicians
+  install operate the Wi-Fi in housing authority apartment blocks,
+  could be money well-spent.
+Internet could also then be purchased "wholesale" for the building.
 
 ### How many devices connect to the Internet?
 
 The last big data point that we will get
   from our initial measurement devices
-  is how many devices we see on networks.
+  is the number of devices connecting to networks.
 We do this by asking the router
   for the identifiers (technically: MAC addresses) of the devices
   (laptops, tablets, phones, Chromecasts, etc.)
   that are currently connected to it (ARP table after a port scan).
 We never send those identifiers back to our own servers,
-  but we do track how many unique devices have been seen in the last day or week,
+  but we do record how many unique devices have been seen in the last day or week,
   or since the device was installed.
 Though we do not do this, 
   it is technically possible, 
@@ -325,7 +335,7 @@ Still, it's a little surprising
   nearly 30 over the course of months, 
   and around ten on any given day.
 Though devices are anonymous, 
-  you _can_ infer from a plot like that "someone" arrives in a home.
+  you _can_ infer from a plot like this when "someone" arrives in a home.
 My father-in-law, in particular, carries several
   devices: a watch, phone, and a tablet.
 Thus, his daily arrival to tend to my son 
@@ -337,19 +347,19 @@ Further, you _can_ see on a plot like this
 
 ### Bonus: how much Internet do I use or need?
 
-Here's a bonus feature from my own device,
+There's a bonus feature on my own device,
   that I find fascinating: consumption.
 We did not include in our "study" devices,
-  due to both the incumbent technical complication and 
+  due to both the complexity of installation for users and 
   concerns about privacy.
 Consumption measures _how much_ data I used, 
-  minute by minute, over the last year.
+  minute by minute, over the last six months.
 It doesn't show the sites I visited,
   but by making it _possible_ for the devices to measure this,
   we would, technically have been _able_ to see this.
 (My setup relies on different hardware:
   an extra "switch," to redirect my internet traffic, for counting.
- You can read about the basic technical setup, [here][net-traffic].)
+ You can read about the basic technical setup, [here][net-traffic-switch].)
 
 At any rate, the public devices don't have this feature, 
   but mine does.
@@ -370,14 +380,14 @@ Well, on a minute-by-minute level,
   we almost never use all of the bandwidth that we buy.
 It happens for about an hour, around September 10, 
   when I set up a tablet with lots of videos for my son.
-That impression however, is somewhat misleading:
-  most Internet demand is very _peaky_.
+However, that impression is somewhat misleading:
+  Internet demand is very _peaky_.
 That is: I want my email _now_, not in a minute.
-So on shorter time scales,
+On shorter time scales,
   the peaks in data rates are much higher higher (though of course, also shorter).
-Still, I am rarely wanting for speed.
-Looking carefully, 
-  you can see that the nights are generally pretty clear.
+Nevertheless, it is true that I am rarely wanting for speed.
+(Looking carefully, 
+  you can also see that the nights are generally pretty clear.)
 
 ![Consumption: September](/assets/img/home_performance/consumption_1m.png)
 
@@ -413,13 +423,13 @@ The whole experience can really slow down,
   which rely on low and steady latency (low jitter),
   can really degrade.
 
-Having a faster connection, would let the phone complete its backup faster
+Having a faster connection would let the phone complete its backup faster
   and that would make the network disruption shorter.
 Again, this seems to have come from 
   weird settings paired with questionable implementation by Apple
   (an incremental backup should be fairly small, and these, clearly, are not).
 But with this absurdly detailed view of my home network,
-  I was able to tweak my network, and make it run a little better.
+  I was able to tweak the phone's settings and make my network run a little better.
 
 
 #### Notes
@@ -429,6 +439,7 @@ But with this absurdly detailed view of my home network,
 [net-data]:           {% post_url 2020-12-06-public-data-on-internet-equity %}
 [net-measurements]:   {% post_url 2020-12-07-basic-measurements-of-access-networks %}
 [net-traffic]:        {% post_url 2020-12-09-measuring-internet-traffic %}
+[net-traffic-switch]: https://jamessaxon.github.io/broadband/measurement/consumption/2020/12/09/measuring-internet-traffic.html#1-wired-hardware-switch-mirroring
 [how-much]:           {% post_url 2021-02-01-how-much-bandwidth-for-video %}
 [comcast-ie]:         https://www.internetessentials.com/covid19
 [apple-resp]:         https://www.ietf.org/archive/id/draft-cpaasch-ippm-responsiveness-00.html
