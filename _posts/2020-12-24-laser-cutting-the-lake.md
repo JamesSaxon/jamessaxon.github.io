@@ -2,7 +2,7 @@
 layout: post
 title:  "Laser Cutting the Lake"
 date:   2020-12-24
-categories: laser art
+categories: art
 ---
 
 A year ago, I laser-cut [paper mountains][paper-mountains],
