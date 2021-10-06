@@ -126,21 +126,23 @@ And in some respects, it simplifies things:
   one less decision to make.
 But Comcast charges $14 a month for this, $168 a year.
 For just a little more money, 
-  you can buy yourself a better modem that you will own for years.
+  you can buy yourself a better modem/Wi-Fi combo, 
+  that you will own for years.
 
 This saves you money not only on the rental itself;
-  it makes it easier to maintain a cheaper contract.
+  it also makes it easier to maintain a cheaper contract.
 When the "initial rate" of an ISP contract runs out, usually after 12 months,
   you can simply call and tell them to either reset your rate or cancel your contract.
-Since you own the modem, there's no equipment to return.
+Since you own the modem, there's no hassle, and no equipment to return.
 Then just have your spouse, partner, or room-mate 
-  sign up for service again at the same address, or do it for them.
+  sign up for service again at the same address
+  (or do it for them).
 In the last few years, Comcast twice just gave me the service price I wanted.
-Last year and on behalf of my in-laws,
+Last year, for myself and on behalf of my in-laws,
   I had to create a new contract in the "other" spouse's name.
 But there was never an interruption in service.
 By owning my modem, I pay just $25 a month
-  for our home Internet, and it is perfectly adequate.
+  for our home Internet, and it is entirely adequate.
 My annual gab-fest with Comcast customer service,
   always performed with a glass of wine,
   takes about an hour but has saved me up to $500 per year.
@@ -158,9 +160,10 @@ If you _do_ decide to replace the ISP rental,
    ISPs do tend to bump up speeds over time, and 
      you won't save yourself any money
      if you end up buying another router, next year.
-   Comcast and AT&T do ensure that the device
-     is adequate for your contract, if you rent.
-   If you buy, you're responsible for it.
+   If you rent, 
+     Comcast and AT&T do ensure that the device
+     is adequate for your contract.
+   If you buy, you become responsible for that check.
 3. The choice among available routers can be a little daunting.
    PC Magazine has a good and up-to-date
     [review][pcmag] of good Wi-Fi routers for 2021, 
