@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Jamie Saxon
-title:  A Physicist Installs Wi-Fi
+title:  Practical Steps for Improving your Wi-Fi
 date:   2021-10-05
 categories: broadband performance wifi
 ---
@@ -12,17 +12,19 @@ I've described this in past posts on [broadband][broadband].
 With those tools installed in our homes,
   we can rigorously measure what you already know:
   the Wi-Fi stinks!
-The speeds that you pay for from the ISP
+The speeds that you pay for from your Internet Service Provider
   often fail to reach the devices that you use!
 
 A number of collaborators and community members have asked
   what they can do to improve this situation.
-The good news is that a few simple changes
-  can improve your connection, and potentially save you money.
-This post will explain the tricks, but here they are:
+Fortunately, a few simple changes
+  can improve the performance of your network,
+  and potentially save you money.
+This post will explain those tricks,
+  but here they are in short:
 
 1. Place your Wi-Fi far from big hunks of metal and other electronics, _especially_ your microwave.
-2. If at all possible, put it high up, like on a cabinet or a bookshelf.
+2. If at all possible, put your Wi-Fi high up, like on a cabinet or a bookshelf.
 3. Buy your own modem/router combo.
 
 ### Move the Wi-Fi away from metal and microwaves!
@@ -30,7 +32,7 @@ This post will explain the tricks, but here they are:
 This is probably the most important point.
 Your Wi-Fi transmits data as electromagnetic waves,
   and metal can reflect or shield these waves.
-Look, I used to work on this physics experiment:
+I used to work on this physics experiment:
 
 <img src="/assets/img/trt_annotated.jpg" alt="Transition Radiation Tracker" style="padding:10px" height=250px class=center />
 
@@ -42,41 +44,48 @@ The purpose of this metal wrapping
   from interfering with the sensitive electronics inside.
 Simply put, metal blocks electromagnetic waves.
 
-Look, this is where I used to have my Wi-Fi:
+This is where I used to have my Wi-Fi:
 
 <img src="/assets/img/wifi_placement.jpg" alt="Old placement" style="padding:10px" height=470px class=center />
 
 I had it there because that is where the cable came out of the wall,
   and about as far as it reached.
-But it was nearly engulfed in sheets and chunks of metal:
+But, in this location, my Wi-Fi access point
+  was nearly engulfed in sheets and chunks of signal-blocking metal:
   the dishwasher, the oven, and the radiator!
-It's not _quite_ a Faraday cage, but it was still stupid,
+It wasn't _quite_ a Faraday cage, but it was still stupid,
   and it certainly blocked the signal.
-Get smart!  Move it away!
+Get smart!  Move your Wi-Fi away from metal!
 
-Next, other equipment, specifically 
-  microwaves and old, cordless phones share space 
-  ("spectrum") with your Wi-Fi and can interfere with its signals.
-Your Wi-Fi spits out waves at two frequencies or _bands_:
+So why is your microwave oven _particularly_ bad.
+Your Wi-Fi communicates by emitting and receiving microwaves.
+The FCC lets Wi-Fi use two frequencies or _bands_:
   2.4&nbsp;GHz and 5&nbsp;GHz.
 Two bands -- more data!
 But the bands also serve different purposes.
-Lower frequencies can penetrate through stuff --
-  walls, furniture, you -- better than high frequencies,
-  but you can embed more data in the high frequency waves.
-So: 5&nbsp;GHZ is good for speed while 2.4&nbsp;GHz is good for coverage.
 
-Here's a little wrinkle, though.
-The food that you like to heat in your microwave is largely water.
-By an accident of nature, while fairly high frequencies (10-100&nbsp;GHz)
+Lower frequencies are better at penetrating through stuff
+  (walls, furniture, or people),
+  but you can embed more data in higher frequencies.
+More data means faster "speeds."
+So: 5&nbsp;GHZ is good for speed
+  while 2.4&nbsp;GHz is good for coverage.
+Unfortunately,
+  microwaves and old, cordless phones 
+  can also use that 2.4&nbsp;GHz band.
+When they do, they interfere with the Wi-Fi's signals.
+
+The reason that your 
+  microwave works at around 2.4 GHz is interesting.
+The food that you heat in your microwave is largely water.
+While fairly high frequencies (10-100&nbsp;GHz)
   are good at dumping heat (power) into water,
-  they do not penetrate deep _into_ it.
-(Interesting physics [here][microwave-physics].)
-Since you want to heat the whole bowl of rice,
-  history stumbled on a lower value, 2.45&nbsp;GHz, for microwave ovens.
-The FCC let Wi-Fi use the spectrum too.
+  they do not penetrate deep _into_ it (see [here][microwave-physics]).
+Since you want to heat your whole bowl of rice
+  and not just toast it,
+  history stumbled on 2.45&nbsp;GHz for microwave ovens.
 
-What's the meaning of all this?
+What is the meaning of all this?
 Well there are two thick, brick walls
   between the Wi-Fi in my kitchen
   and the back bedroom of my apartment.
@@ -95,10 +104,12 @@ Do I _actually_ see "lunch-time blues?"
 Yes, yes I do.
 
 What's to be done?
-A reliable solution,
-  if it's possible in your home,
-  is to route an Ethernet cable
-  to your home office.
+If you can't move your Wi-Fi out of the kitchen,
+  another reliable solution
+  (if it's possible in your home),
+  is to route an Ethernet cable to spaces
+    in your home where you need high bandwidth,
+    like your home office or 4K streaming device.
 If that's not possible, you can look
   into signal repeaters or mesh networks -- 
   but I won't get into those here.
@@ -112,33 +123,40 @@ If your Wi-Fi access point is on the floor (as mine was),
   to reach you.
 If your Wi-Fi is up high, 
   the signal can travel through less stuff.
+The signal will be stronger when it reaches you
+  if it travesl through less stuff en route.
 
-### Buy your own Wi-Fi access point!
+### Buy your own equipment!
 
-This one is a little bit more complicated,
+This tip is a little bit more complicated,
   but it can potentially save you a ton of money.
 
-Most people rent a modem/router/Wi-Fi combo
+Out of convenience,
+  most people rent a modem/router/Wi-Fi combo
   from their Internet Service Provider (ISP).
 I certainly used to.
 And in some respects, it simplifies things:
   one less thing to worry about,
   one less decision to make.
-But Comcast charges $14 a month for this, $168 a year.
+But Comcast charges $14 a month for rentals -- $168 a year.
 For just a little more money, 
   you can buy yourself a better modem/Wi-Fi combo, 
   that you will own for years.
 
 This saves you money not only on the rental itself;
-  it also makes it easier to maintain a cheaper contract.
-When the "initial rate" of an ISP contract runs out, usually after 12 months,
-  you can simply call and tell them to either reset your rate or cancel your contract.
-Since you own the modem, there's no hassle, and no equipment to return.
-Then just have your spouse, partner, or room-mate 
+  it also makes it easier to maintain a cheaper contract with the ISP.
+When the "initial rate" of an ISP contract expires,
+  usually after 12 months,
+  you can simply call and tell the ISP
+  to either reset your rate or cancel your contract.
+Since you own the equipment,
+  there's nothing to return and no hassle.
+Then, have your spouse, partner, or housemate 
   sign up for service again at the same address
   (or do it for them).
-In the last few years, Comcast twice just gave me the service price I wanted.
-Last year, for myself and on behalf of my in-laws,
+Three times in the last few years,
+  Comcast just gave me (or my in-laws) the service price I asked for.
+Once, 
   I had to create a new contract in the "other" spouse's name.
 But there was never an interruption in service.
 By owning my modem, I pay just $25 a month
@@ -146,7 +164,7 @@ By owning my modem, I pay just $25 a month
 My annual gab-fest with Comcast customer service,
   always performed with a glass of wine,
   takes about an hour but has saved me up to $500 per year.
-Owning a modem makes the call a lot easier.
+Owning equipment makes the call a lot easier.
 
 If you _do_ decide to replace the ISP rental,
   there are a few things that you need to be aware of.
@@ -157,7 +175,13 @@ If you _do_ decide to replace the ISP rental,
 2. Whatever combo (or set of boxes) you buy,
     make sure that all components can support speeds
     well in excess of your current contract.
-   ISPs do tend to bump up speeds over time, and 
+   For example, modem, router, and Wi-Fi
+     are rated for 600 Mpbs, 1000 Mbps, and 1300 Mbps,
+     respectively.
+   I buy 60 Mbps, so these devices are more than capable
+     for me, but if you have a gigabit (1000 Megabit)
+     plan, you'll need fancier equipment
+   Moreover, ISPs do tend to bump up speeds over time, and 
      you won't save yourself any money
      if you end up buying another router, next year.
    If you rent, 
@@ -171,6 +195,8 @@ If you _do_ decide to replace the ISP rental,
    If you're after simplicity, I have recommended
      this [combo from Netgear][netgear]
      for speeds up to about half a gigabit per second (500&nbsp;Mbps).
+   (Again: if you have a top-tier, gigabit Internet plan,
+    you'll need fancier, more-expensive equipment.)
    If you're looking for something snazzy,
      Ubiquiti makes good equipment with excellent software,
      but the learning curve may be steeper.
@@ -178,9 +204,10 @@ If you _do_ decide to replace the ISP rental,
      also from Netgear, paired with [this modem][my-modem].
 
 A little caveat on all this.
-As I've said: Comcast or AT&T _should_
+Comcast or AT&T _should_
   ensure that whatever they rent to you is adequate for your subscription.
-If that were true, this method would save you money but not improve speeds.
+If that were true, then buying your own equipment
+  would save you money but not improve speeds.
 However, in my own experience,
   I was able to improve my experience and speeds measured 
   with the equipment I bought.
