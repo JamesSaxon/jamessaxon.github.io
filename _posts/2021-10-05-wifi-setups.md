@@ -168,6 +168,7 @@ Owning equipment makes the call a lot easier.
 
 If you _do_ decide to replace the ISP rental,
   there are a few things that you need to be aware of.
+
 1. You need not just a modem or a router,
      but a modem, router, and Wi-Fi access point.
    You can read about these distinct functions, [here][terms-myths].
