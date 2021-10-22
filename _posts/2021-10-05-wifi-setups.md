@@ -110,7 +110,7 @@ If you can't move your Wi-Fi out of the kitchen,
   is to route an Ethernet cable to spaces
     in your home where you need high bandwidth,
     like your home office or 4K streaming device.
-If that's not possible, you can look
+If _that's_ not possible, you can look
   into signal repeaters or mesh networks -- 
   but I won't get into those here.
 
