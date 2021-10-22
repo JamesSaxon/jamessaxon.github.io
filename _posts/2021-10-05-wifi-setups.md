@@ -82,7 +82,7 @@ While fairly high frequencies (10-100&nbsp;GHz)
   are good at dumping heat (power) into water,
   they do not penetrate deep _into_ it (see [here][microwave-physics]).
 Since you want to heat your whole bowl of rice
-  and not just toast it,
+  and not just toast its surface,
   history stumbled on 2.45&nbsp;GHz for microwave ovens.
 
 What is the meaning of all this?
