@@ -9,11 +9,12 @@ categories: broadband performance
 Nearly a year ago, I wrote few posts
   describing [data][net-data]
   that quantify the human and infrastructural context of the Internet,
-  and technical strategies ([A][net-measurements], [B][net-traffic])
-  for evaluating its performance.
-In January, we received
-  [$1.2M in funding][mapping-mitigating] from
-  [data.org][data-org],
+  and technical strategies
+  for evaluating its performance
+  ([A][net-measurements], [B][net-traffic]).
+In January, the [Center for Data and Computing][cdac], where I work,
+  received [$1.2M in funding][mapping-mitigating] from
+  [data.org][data-org]
   for measurements of Internet performance in Chicago neighborhoods.
 We have just shipped devices to 50 households across Chicago.
 Over the next few months, we will begin to accumulate a detailed
@@ -34,7 +35,9 @@ It's the little black box here, the raspberry pi:
 In this post, I'll showcase what we can understand or learn
   about Internet performance by examining a single home.
 In doing this, I'll try to illustrate the practical meaning of our measurements.
-In a way, this feels a lot like looking at a "FitBit"
+My hope is that describing my own network 
+  will help others understand what might affect theirs.
+In a sense, it's like looking at a "FitBit"
   for my home network: it gives a sense of baseline health,
     anomalies, and my standing as compared with the population.
 The short term values are sort of "incidentally interesting" --
@@ -44,7 +47,7 @@ I can see diurnal cycles (sleep and and work),
   and the limitations of my home network.
 But I find the longer term picture quite engrossing,
   especially changes and anomalies.
-We can watch the Internet evolve
+We can watch the Internet evolve,
   see how it fails, and diagnose failures.
 
 As we extend to households across the city,
@@ -62,7 +65,7 @@ This is a lot of plots (!);
 
 In order to measure how much Internet I _use_,
   I also redirect all of my traffic, 
-  to measure Intern _consumption_.
+  to measure data _consumption_.
 We don't do that for the "standard" boxes.
 Otherwise, the data here is what we see across the city,
   though this dashboard is more-expansive than the 
@@ -108,7 +111,7 @@ _Some_ variation is natural, since I do use my network,
 Ensuring that we are _able_ to achieve full bandwidth 
   required some technical attention, for gigabit connections (not on mine).
 We had to tune the University firewall,
-  and different websocket settings for NDT7.
+  and specify different websocket settings for NDT7.
 More recently, we see that bandwidths are
   fairly stable, though the "answers"
   are slightly different for iperf UDP (60.6&nbsp;Mbps), Ookla (59.5&nbsp;Mbps), and NDT (58.5&nbsp;Mbps).
@@ -139,7 +142,7 @@ This is the fastest call and response,
   (technically: the first public IP address).
 On my cable connection to Comcast,
   this is about 7.8&nbsp;milliseconds (ms),
-  but that is even faster on fiber links.
+  but that time can be even lower on fiber links.
 Next up, we see that the minimum 
   response time for Google is around 8.3&nbsp;ms,
   just half a millisecond longer.
@@ -150,6 +153,7 @@ In other words, Google is probably
 Because I've had my setup installed for more than half a year,
   we can begin to see changes in the network.
 On June 3, pretty much all latencies dropped by two milliseconds.
+You can see that in the minimum time to Google, below.
 There were also a smaller drops at the beginning of February
   and at the end of April,
   more visible in averages than minima.
@@ -186,7 +190,7 @@ Embedded in amongst this heap is Wikipedia, which does not use a CDN.
 All of its servers are in Virginia,
   and any request must trek to the East Coast and back.
 
-Finally, there is are a number of moments in time (September 26, for example),
+Finally, there are a number of moments in time (September 26, for example),
   when _everyone's_ averages get long.
 What the heck is going on?
 In short: I'm using my network.
@@ -264,7 +268,8 @@ Then, when you call Comcast to complain,
   evidence that the low speed is actually _their fault_!
 
 By wiring our devices to your router, 
-  we address that objection directly.
+  we address Comcast's objection directly:
+  the speeds we measure are the speeds they deliver.
 But that means that we can't see the speeds that _you_ actually experience!
 To measure _that_, 
   we run an NDT7 utility (server) directly on your local network.
@@ -404,7 +409,7 @@ You can still see those "boxes" --
 
 ![Consumption: Two Days, Zoomed.](/assets/img/home_performance/consumption_zoom.png)
 
-But what we didn't have before, 
+But what I didn't see in my earlier data, 
   were the super high and very-long upstream flows (maxing it out),
   as around 2pm on September 28 or midnight on Ocober 1.
 What are these?
@@ -440,6 +445,7 @@ But with this absurdly detailed view of my home network,
 
 [^1]: If routers implement queuing correctly.
 
+[cdac]:               https://cdac.uchicago.edu/
 [net-data]:           {% post_url 2020-12-06-public-data-on-internet-equity %}
 [net-measurements]:   {% post_url 2020-12-07-basic-measurements-of-access-networks %}
 [net-traffic]:        {% post_url 2020-12-09-measuring-internet-traffic %}
