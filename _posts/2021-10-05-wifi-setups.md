@@ -34,7 +34,7 @@ Your Wi-Fi transmits data as electromagnetic waves,
   and metal can reflect or shield these waves.
 I used to work on this physics experiment:
 
-<img src="/assets/img/trt_annotated.jpg" alt="Transition Radiation Tracker" style="padding:10px" height=250px class=center />
+<img src="/assets/img/trt_annotated.png" alt="Transition Radiation Tracker" style="padding:10px" height=250px class=center />
 
 It is wrapped in metal.
 All the beautiful, orange copper
