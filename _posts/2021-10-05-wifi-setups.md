@@ -37,8 +37,8 @@ I used to work on this physics experiment:
 <img src="/assets/img/trt_annotated.jpg" alt="Transition Radiation Tracker" style="padding:10px" height=250px class=center />
 
 It is wrapped in metal.
-All the beautiful, orange copper is called a Faraday cage.
-(Not the support cage, the shiny stuff.)
+All the beautiful, orange copper
+  is called a Faraday shield.
 The purpose of this metal wrapping 
   is to block electromagnetic radiation
   from interfering with the sensitive electronics inside.
