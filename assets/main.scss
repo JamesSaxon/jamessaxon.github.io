@@ -25,6 +25,7 @@ a:visited {
 
 figcaption {
   font-size: 9pt;
+  padding: 8px;
 }
 
 .center {
@@ -33,12 +34,31 @@ figcaption {
   text-align: center;
 }
 
+.thumb_pad {
+  padding: 5px;
+}
+
 .thumb {
   width: 100px;
   padding: 5px;
 }
 
+.thumb_vert {
+  height: 200px;
+  padding: 5px;
+}
+
+.thumb_rip {
+  width: 14.5%;
+  padding: 5px;
+}
+
+.thumb_soln {
+  width: 110px;
+  padding: 3px 5px;
+}
+
 .img_set {
-  padding: 10px 0px 20px;
+  padding: 5px 0px 10px;
 }
 

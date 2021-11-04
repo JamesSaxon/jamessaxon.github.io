@@ -1,7 +1,10 @@
 <figure>
 <a href="/assets/img/{{ include.url }}"
    data-lightbox="all" data-title="{{ include.description }}">
-  <img height={{ include.height }}px src="/assets/img/{{ include.url }}" alt="" class=center /></a>
+  <img 
+    {% if include.height and include.height != nil %}height="{{ include.height }}"{% endif %} 
+    {% if include.width  and include.width  != nil %} width="{{ include.width  }}"{% endif %} 
+    src="/assets/img/{{ include.url }}" alt="" class=center /></a>
 <figcaption>
 <p class=center>
 {{ include.description }} (Click to expand.)
