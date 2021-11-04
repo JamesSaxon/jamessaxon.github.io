@@ -12,8 +12,8 @@ tl;dr: I made lamps of trees and ripples:
 
 A few years ago, through my academic work on [park access][parks]
   and my project to [cut mountains from paper][paper-mountains],
-  I became interested in using natural patterns to create soothing art with light,
-In short: biophilic design with light.
+  I became interested in using natural patterns in my art projects.
+In short: biophilic design.
 Frederick Law Olmsted, the designer of Central Park in New York 
   and Jackson Park in Chicago, 
   described the influence of nature beautifully, [in 1865][olmsted-yosemite]:[^1]
