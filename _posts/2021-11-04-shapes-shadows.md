@@ -8,7 +8,7 @@ categories: art
 
 tl;dr: I made lamps of trees and ripples:
 
-  <img class="center" style="padding: 5px; width: 65%;" alt="Shoulders." src="/assets/img/shapes_shadows/shoulders/1110324.jpg"/>
+<img class="center" style="padding: 5px; width: 65%;" alt="Shoulders." src="/assets/img/shapes_shadows/shoulders/1110269.jpg"/>
 
 A few years ago, through my academic work on [park access][parks]
   and my project to [cut mountains from paper][paper-mountains],
