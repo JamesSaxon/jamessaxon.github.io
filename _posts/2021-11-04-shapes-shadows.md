@@ -6,11 +6,13 @@ date:   2021-11-04
 categories: art
 ---
 
-tl;dr: I made lamps of trees and ripples.
+tl;dr: I made lamps of trees and ripples:
 
-Several years ago, I became interested 
-  in using natural patterns to create soothing art with light,
-  building on my project to [cut mountains from paper][paper-mountains].
+  <img class="center" style="padding: 5px; width: 65%;" alt="Shoulders." src="/assets/img/shapes_shadows/shoulders/1110324.jpg"/>
+
+A few years ago, through my academic work on [park access][parks]
+  and my project to [cut mountains from paper][paper-mountains],
+  I became interested in using natural patterns to create soothing art with light,
 In short: biophilic design with light.
 Frederick Law Olmsted, the designer of Central Park in New York 
   and Jackson Park in Chicago, 
@@ -18,43 +20,43 @@ Frederick Law Olmsted, the designer of Central Park in New York
 
 > the enjoyment of scenery employs the mind without fatigue and yet exercises it, tranquilizes it and yet enlivens it; and thus, through the influence of the mind over the body, gives the effect of refereshing rest and reinvigoration to the whole system.
 
-It is both inspiring and a little exasperating
+It is at once inspiring and a little exasperating
   how academic work can rigorously (and _ad nauseum_) validate
   what we already "know," or believe.
 The restorative psychological (executive function, etc.)
   and physiological (heart rate, cortisol) influence of
-  exposures to nature have been measured rigorously.
+  exposures to nature have been [measured][markevych] [rigorously][kaplan].
 Parks and open spaces yield further health benefits
   as a venue for exercise and by fostering communities.
-[Marc Berman][berman], also at UChicago,
-  influenced my thinking, with his work to measure how people process and 
+[Marc Berman's][berman] lab at UChicago
+  has measured how people process and 
   respond to the visual cues of natural forms,
-  and the ways in which these are incorporated in architecture.
+  and described the ways in which these forms are incorporated in architecture.
 These include self-similar patterns (fractals),
   multiple scales, semantic cues (ideas and words), colors, and so forth.
+The idea of delineating and quantifying the influences 
+  of nature that we all experience affected me strongly.
 
-At any rate, the short version is that 
-  the subtle order of the natural world
-    is entrancing and calming.
-So how I set out to try to use light 
-  to express the subtle forks of a branch,
-  and to communicate the peace of ripples on a pond.
+In short:
+  I set out to use light
+  to express the subtle curves of tree branches, 
+  and to echo the calm of ripples on a pond.
 
 ### Modeling Natural Processes
 
-I began by modeling natural processes and patterns.
-Doing this, algebra and computers offer two divergent paths.
+I began by modeling processes and patterns.
+Algebra and computers offer two divergent paths for doing this.
 We can derive the solutions to mathematical equations for
   things like ripples in a coffee cup, vibrations on a drum, or waves in water.
 Or we can define the algorithms or "rules"
   for phenomena like the leaves or branches of trees,
-  whose stochastic realizations are unique but recognizable.
+  whose stochastic realizations are unique but intelligible.
 
 #### Ripples and Waves
 
-Just as sculptors study anatomy, I began with the physics.
-Science helps focus our observations of the world,
-  and the [Feynman Lectures][feynman] (47-51) are excellent for this.
+Just as sculptors study anatomy, I began by reviewing the physics.
+Science helps focus observations;
+  the [Feynman Lectures][feynman] (47-51) are wonderful for this.
 How deep is the water?
 Are the ripples caused by gravity or by surface tension?
 How does a single crest move with respect to a group (group vs phase velocities)?
@@ -134,7 +136,7 @@ For instance, 1 ripple up and 3 across,
   has equal energy on a square drum, 
   to 3 up and 1 across.
 When that is true, you can replace solutions _A_ and _B_ with 
-  _A_&nbsp;+&nbsp;_B_ and _A_&nbsp;&mdash;&nbsp;_B_,
+  _A_&nbsp;+&nbsp;_B_ and _A_&nbsp;&minus;&nbsp;_B_,
   or indeed any "random" linear combination of _A_ and _B_![^4]
 As it happens, 
   those "random" solutions are what Mathematica gave me, 
@@ -155,7 +157,7 @@ This straightforward, biologically-inspired algorithm
 The algorithm is initialized with
 
 <ol type="A">
-  <li> A starting point i.e., a stem.</li>
+  <li> A starting point i.e. a stem.</li>
   <li> A set of destinations, spread evenly across a leaf.  Biologically, these are sources of <em>auxin</em>, which attract growth.</li>
 </ol>
 
@@ -189,13 +191,13 @@ The challenge was that I needed to
 
 My initial strategy for this
   was to write code to translate raster pictures into
-  vector formats that were guaranteed to be fully-connected.
+  vector formats that were guaranteed to be fully-connected:
   lithographies/wood-cuts and hexagonal half-tones.
-In other words:
-  I used the width of lines or the areas of hexagons
-  to determine how much light to let through a piece of wood.
+This means using the brightness of the image to 
+  specify the width of cuts or the areas of hexagons,
+    and determine how much light to let through a piece of wood.
 I found after the fact that the laser-cut half-tone 
-  proecss has been done before, most notably by Eric Forman.
+  proecss has been done before, most notably by [Eric Forman][forman].
 Here are some ripples from the Fox River and the Jackson Park Lagoon,
   as images, half-tone hexagons, and "lithographies":
 
@@ -254,9 +256,9 @@ Both exhibit fractal patterns
   that follow from shared structural requirements.
 But the components of the bridge are straight and regular
   and they "limbs" connect in multiple points.
-Trees' branches curve and fork, without loops.
-However, since any weight must be supported _somehow_,
-  the shadows are all connected, and
+Trees' branches curve and fork without loops.
+However, since any weight must be supported,
+  the shadows are all connected and
   lend themselves to laser cutting.
 
 ### Creating Light and Shadow
@@ -304,7 +306,7 @@ For example, this lamp sets two pictures of ripples
   against two of the harmonics for the 1&nbsp;&times;&nbsp;2 surface from above.
 This grouping counterposes not man and nature
   but analytical solutions to physical equations
-    against the phenomena as we observe them in the real-world.
+    against the phenomena as we observe them in the world.
 Universal laws vs ephermeral realities, if you will:
 
 <figure class="img_set center">
@@ -312,7 +314,7 @@ Universal laws vs ephermeral realities, if you will:
   <a href="/assets/img/shapes_shadows/ripples_a.jpg" data-lightbox="all" data-title="Ripples. (Caligraphy by Thich Nhat Hanh in the background.)"><img class="thumb_pad" style="width: 35%;" src="/assets/img/shapes_shadows/ripples_a.jpg"/></a>
   <figcaption>
   <p class=center>
-  <em>Ripples:</em> thresholded images of the Jackson Park lagoon, with solutions to the Laplace equation for a 1&nbsp;&times;&nbsp;2 surface.
+  <em>Ripples:</em> thresholded images of the Jackson Park Lagoon, with solutions to the Laplace equation for a 1&nbsp;&times;&nbsp;2 surface.
   </p>
   </figcaption>
 </figure>
@@ -356,6 +358,10 @@ Notes:
 [olmsted-yosemite]: https://www.nps.gov/parkhistory/online_books/anps/anps_1b.htm
 [drussell]:         https://www.acs.psu.edu/drussell/Demos/rect-membrane/rect-mem.html
 [my-venation]:      https://gist.github.com/JamesSaxon/aaa5614eff18d1ed70564635f0729891
+[parks]:            https://saxon.cdac.uchicago.edu/parks/
+[markevych]:        http://dx.doi.org/10.1016/j.envres.2017.06.028
+[kaplan]:           https://doi.org/10.1111/j.1467-9280.2008.02225.x
+[forman]:           https://www.instructables.com/ScaleScape-Halftone-Light-Panel-series/
 
 
 
