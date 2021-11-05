@@ -25,7 +25,7 @@ It is at once inspiring and a little exasperating
   what we already "know," or believe.
 The restorative psychological (executive function, etc.)
   and physiological (heart rate, cortisol) influence of
-  exposures to nature have been [measured][markevych] [rigorously][kaplan].
+  exposures to nature have been measured rigorously (e.g., [1][markevych], [2][kaplan]).
 Parks and open spaces yield further health benefits
   as a venue for exercise and by fostering communities.
 [Marc Berman's][berman] lab at UChicago
