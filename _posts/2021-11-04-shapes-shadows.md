@@ -176,7 +176,7 @@ My (very-rough) code is in [this gist][my-venation].
 
 {% include imagecap.html url="shapes_shadows/m_venation.png" width="60%" description="Venation pattern for an <em>M</em>, generated using the algorithm by Runions et al." %}
 
-Though this did not fit my immediate, aesthetic aims,
+Though this did not fit my immediate aesthetic aims,
   the basic algorithm is clearly capable of very nice results.
 I look forward to revisiting this for generative grillwork/lattices.
 
@@ -197,7 +197,7 @@ This means using the brightness of the image to
   specify the width of cuts or the areas of hexagons,
     and determine how much light to let through a piece of wood.
 I found after the fact that the laser-cut half-tone 
-  proecss has been done before, most notably by [Eric Forman][forman].
+  process has been done before, most notably by [Eric Forman][forman].
 Here are some ripples from the Fox River and the Jackson Park Lagoon,
   as images, half-tone hexagons, and "lithographies":
 
@@ -221,7 +221,7 @@ In principle this works pretty well,
   but in practice it requires large, contrasty images.
 One improves the fidelity of the representation by 
   increasing the number of lines or hexagons,
-  but the wood sets an upper limit on this.
+  but the material, wood, sets an upper limit on this number.
 The half-tone process did yield evocative results&nbsp;--
   your eye can "graze" over the hexagon patterns
   much as you track the crest of a single ripple in a pool
