@@ -330,7 +330,7 @@ Yet again, perhaps more prosaic, I spent literally a year
   <a href="/assets/img/shapes_shadows/fall.jpg" data-lightbox="all" data-title="Seasons: Fall."><img class="thumb_pad" style="width: 22.4%;" src="/assets/img/shapes_shadows/fall.jpg"/></a>
   <figcaption>
   <p class=center>
-  <em>Ripples:</em> thresholded images of the Jackson Park Lagoon, with solutions to the Laplace equation for a 1&nbsp;&times;&nbsp;2 surface.
+  <em>Seaons:</em> trees in Jackson park, through the year.
   </p>
   </figcaption>
 </figure>
