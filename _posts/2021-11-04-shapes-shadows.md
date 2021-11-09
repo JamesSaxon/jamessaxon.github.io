@@ -13,12 +13,15 @@ tl;dr: I made lamps of trees and ripples:
 A few years ago, through my academic work on [park access][parks]
   and my project to [cut mountains from paper][paper-mountains],
   I became interested in using natural patterns to make soothing objects.
-That is: biophilic design.
 Frederick Law Olmsted, the designer of Central Park in New York 
   and Jackson Park in Chicago, 
-  described the influence of nature beautifully, [in 1865][olmsted-yosemite]:[^1]
+  described the influence of nature beautifully, [in 1865][olmsted-yosemite]:
 
 > the enjoyment of scenery employs the mind without fatigue and yet exercises it, tranquilizes it and yet enlivens it; and thus, through the influence of the mind over the body, gives the effect of refereshing rest and reinvigoration to the whole system.
+
+More recently, E. O. Wilson's _Biophilia_ set the stage for biophilic design,
+  though I was personally drawn to simulate not just living forms
+  but _natural_ phenomena more broadly.
 
 It is at once inspiring and a little exasperating
   how academic work can rigorously (and _ad nauseum_) validate
@@ -84,11 +87,11 @@ Or you and your dance playlist.
 If you've known me for a bit,
   I have probably raved at you about Bessel functions
   at some point, while banging on the table 
-    and scrutinizing the ripples in my coffee.[^2]
+    and scrutinizing the ripples in my coffee.[^1]
 
 You can solve this equation
   (the Laplace equation with Dirichlet boundary conditions)
-  for any surface or shape like so:[^3]
+  for any surface or shape like so:[^2]
 
 ```
 ℒ = Laplacian[u[x, y], {x, y}];
@@ -137,13 +140,13 @@ For instance, 1 ripple up and 3 across,
   to 3 up and 1 across.
 When that is true, you can replace solutions _A_ and _B_ with 
   _A_&nbsp;+&nbsp;_B_ and _A_&nbsp;&minus;&nbsp;_B_,
-  or indeed any "random" linear combination of _A_ and _B_![^4]
+  or indeed any "random" linear combination of _A_ and _B_![^3]
 As it happens, 
   those "random" solutions are what Mathematica gave me, 
   and I first chose "degenerate" solutions purely on aesthetic grounds.
 Only later did I wonder why I had gotten _any_ interesting solutions,
   stop to think about the math,
-  and select the "random" solution that I liked best.[^5]
+  and select the "random" solution that I liked best.[^4]
 You can read about it more this in [this paper][kang-wei],
   or find nice visualizations [here][drussell].
 
@@ -322,17 +325,24 @@ Universal laws vs ephermeral realities, if you will:
 Yet again, perhaps more prosaic, I spent literally a year
   taking shadow pictures of leaves through the four seasons:
 
-{% include imagecap.html url="shapes_shadows/seasons.png" width="60%" description="The Wooded Isle of Jackson Park, through the seasons." %}
+<figure class="img_set center">
+  <a href="/assets/img/shapes_shadows/seasons.png" data-lightbox="all" data-title="Seasons."><img class="thumb_pad" style="width: 70%;" src="/assets/img/shapes_shadows/seasons.png"/></a>
+  <a href="/assets/img/shapes_shadows/fall.jpg" data-lightbox="all" data-title="Seasons: Fall."><img class="thumb_pad" style="width: 22.4%;" src="/assets/img/shapes_shadows/fall.jpg"/></a>
+  <figcaption>
+  <p class=center>
+  <em>Ripples:</em> thresholded images of the Jackson Park Lagoon, with solutions to the Laplace equation for a 1&nbsp;&times;&nbsp;2 surface.
+  </p>
+  </figcaption>
+</figure>
 
 Happy Fall!
 
 Notes:
 
-[^1]: Of course, E. O. Wilson wrote the "definitive" literary modern tract, _Biophilia_.
-[^2]: This is probably my favorite basic "factoid" from physics, though the resonant depolarization of the electron beam at LEP, used to get the mass of the _Z_ boson, is a close second.  Ask me about it for bonus ravings!
-[^3]: For this _particular_ surface, `DEigensystem` works too, since it is algebraically solvable / trivial.
-[^4]: For the eigensystem, the two solutions built from _A_ and _B_ must be mutually orthogonal.
-[^5]: That is, I chose the angle of rotation for pairs of separable solutions.
+[^1]: This is probably my favorite basic "factoid" from physics, though the resonant depolarization of the electron beam at LEP, used to get the mass of the _Z_ boson, is a close second.  Ask me about it for bonus ravings!
+[^2]: For this _particular_ surface, `DEigensystem` works too, since it is algebraically solvable / trivial.
+[^3]: For the eigensystem, the two solutions built from _A_ and _B_ must be mutually orthogonal.
+[^4]: That is, I chose the angle of rotation for pairs of separable solutions.
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.js" integrity="sha512-0rYcJjaqTGk43zviBim8AEjb8cjUKxwxCqo28py38JFKKBd35yPfNWmwoBLTYORC9j/COqldDc9/d1B7dhRYmg==" crossorigin="anonymous"></script>
 
