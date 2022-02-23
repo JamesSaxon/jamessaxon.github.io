@@ -10,8 +10,8 @@ datatable: true
 With support from [data.org][data-org],
   we are working to better measure the performance of Internet in American cities.
 Along with our technical work to develop measurement infrastructures,
-  we want to highlight already-available public data
-  make it comprehensible and help others to use it.
+  we want to highlight already-available public data,
+  make them comprehensible, and help others to use them.
 
 In this post, I present a "scorecard" of
   Internet access and equity, for the twenty largest metro regions in the United States.
