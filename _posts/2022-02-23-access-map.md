@@ -1,10 +1,9 @@
 ---
 layout: post
 author: Jamie Saxon
-title:  An Integrated Map of Access
+title:  An Integrated Map of Internet Access
 date:   2022-02-21
 categories: broadband performance
-datatable: true
 ---
 
 A little over a year ago, 
