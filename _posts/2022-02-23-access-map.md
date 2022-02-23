@@ -71,6 +71,8 @@ From Ookla:
 * `tests`, `devices`: number of Ookla Speedtest measurements, and number of unique devices.
 * `tests_per_cap`, `devices_per_cap`: the number of tests or devices, divided by the tract population.
 
+Happy analyzing!
+
 
 [^1]: I did this by apportioning tests based on the areal intersection between quaditles to tracts.
 
