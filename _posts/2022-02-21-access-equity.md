@@ -54,7 +54,7 @@ If you just want the answer, this is it:
 | Denver            |       92.5 |       4.0 |        0.7 |       12.9 |         9.2 |     -0.0 |       0.9 |
 | St Louis          |       87.8 |      12.6 |        2.4 |       -0.9 |         2.0 |      0.1 |      -1.3 |
 
-<br> <br>
+<br>
 
 Most of this will focus on the ACS data.
 At the end, I will delve
@@ -133,7 +133,7 @@ We can download the full data from
 Accounts and data are free
   but the license requires you to download your own data extract.
 To make progress, we'll also have to write some code:
-  this is wrapped up in this [gist][gist].
+  this is wrapped up in this [repo][repo].
 
 The second set of columns above thus show the difference 
   in the shares of people with broadband access, in each Metro region,
@@ -176,7 +176,7 @@ Again, this answers the question:
 The answers for this question are presented in the Table above, 
   in the columns ΔₖRace, ΔₖEthn., ΔₖSex.
 
-### Data Quality: Consistency of the ACS and the CPS
+### Consistency of the ACS and the CPS (Technical!)
 
 In our work, we were careful to reproduce official estimates
   before proceeding to the ones that we've shared above.
@@ -202,17 +202,49 @@ whereas `CINETHH` is supposed to be _any_ Internet connection:
 At the state level,
   the correlation between the API and my reconstructed value was 0.998 with `CINETHH`
   but just 0.892 with `CIHISPEED`.
+To my mind, this appears to be a data error or a labelling error in the API.
 
 #### The Current Population Survey
 
 The analysis above is based entirely on the ACS data,
   but the CPS provides similar reports.
-Their survey question is
+An analysis using those data is also included in the [git repo][repo].
+
+Their corresponding survey question is `HEINHOME`:
+> Does anyone in this household, including you, use the Internet at home? This includes accessing the Internet with a cell phone, computer, tablet, or other device.
+
+They also have `HEHOMTE1`, 
 > I am going to read a list of ways that people access the Internet from their homes, other than a mobile data plan.
 > At home, (do you/does anyone in this household) access the Internet using:
 > <br>High-speed Internet service installed at home, such as cable, DSL, or fiber optic service [...]
+
+So `HEINHOME` seems to match `CINETHH`, and `HEMOMTE` matches `CIHISPEED`.
+
 As above, before proceeding to my own estimates,
-   I reproduced the ones that Rafi Goldberg made for the [NTIA's map][ntia-map].
+ I paintstakingly reproduced the ones that Rafi Goldberg made for the NTIA's state-level [map][ntia-map].
+
+Based on this, the values that we want to compare are `HEINHOME` in the CPS and the 
+  (apparently actually) `CINETHH` from the ACS's API.
+Of course, we must also be consistent between units of observations (households vs person-level), 
+   and in the decision of whether or not to include group quarters.
+Here, I am matching the ACS choices: focusing _any_ access, in non-GQ households.
+The consistency between the ACS and the CPS was, on the whole, not great.
+For CBSA's the correlation between the two measures
+  (ACS broadband via the API and the CPS's `HEINHOME`) was just 0.42.
+For states, the correlation from the ACS API value 
+  to `HEHOMTE1` was 0.72 (with the Universe described) but just 0.54 for `HEINHOME`.
+Numerically, the ACS values are _much_ higher than the CPS ones.
+
+
+One last note:
+Despite its smaller sample size, the CPS does make it possible to identify the largest twenty cities (Census places) in the United States.  
+This is because they do not also have the smaller "PUMA" geographies that the ACS reports in its microdata.
+Based on this, I reproduced the population for the twenty largest cities. 
+I was very surprised, and frankly still incredulous, to find San Francisco near the bottom of the heap 
+  for pretty much any definition of Internet access.  San Jose was at the top.
+But the differences were also not small!!
+The NTIA analysts suggest that it might simply be an unusual statistical noise, but that seems unlikely.
+For certain estimates, San Francisco was 3&sigma; below the rest of California (about a 1 in 300 chance).
 
 
 [^1]: A greater variety of geographies is available, using [5-year][acs-geog-5] estimates (5 years of data) than for just [1-year][acs-geog-1] estimates.  Using the links, you can compare available geographies.
@@ -225,7 +257,7 @@ As above, before proceeding to my own estimates,
 [acs-pums-vars]:    https://api.census.gov/data/2019/acs/acs1/pums/variables.html
 [data-org]:         https://data.org/
 [ipums]:            https://usa.ipums.org/usa/
-[gist]:             https://gist.github.com/49d85752f7db7da5a9252474a78bd446
+[repo]:             https://github.com/JamesSaxon/internet-access-and-equity
 [cihispeed]:        https://usa.ipums.org/usa-action/variables/CIHISPEED#questionnaire_text_section
 [cinethh]:          https://usa.ipums.org/usa-action/variables/CINETHH#questionnaire_text_section
 [ntia-map]:         https://www.ntia.doc.gov/data/digital-nation-data-explorer#sel=homeInternetUser&disp=map
