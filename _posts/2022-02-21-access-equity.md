@@ -237,11 +237,11 @@ Numerically, the ACS values are _much_ higher than the CPS ones.
 
 
 One last note:
-Despite its smaller sample size, the CPS does make it possible to identify the largest twenty cities (Census places) in the United States.  
+Despite its smaller sample size, the CPS does make it possible to identify the largest twenty cities (Census places) in the United States.
 This is because they do not also have the smaller "PUMA" geographies that the ACS reports in its microdata.
 Based on this, I reproduced the population for the twenty largest cities. 
 I was very surprised, and frankly still incredulous, to find San Francisco near the bottom of the heap 
-  for pretty much any definition of Internet access.  San Jose was at the top.
+for pretty much any definition of Internet access.  San Jose was at the top.
 But the differences were also not small!!
 The NTIA analysts suggest that it might simply be an unusual statistical noise, but that seems unlikely.
 For certain estimates, San Francisco was 3&sigma; below the rest of California (about a 1 in 300 chance).
