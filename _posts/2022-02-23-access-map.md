@@ -11,12 +11,12 @@ A little over a year ago,
   indicators of Internet access,
   in the twenty largest American cities.
 In the time since,
-  a number of additional maps have come out
-  with national coverage.
+  a number of additional maps have come out,
+  supplementing the FCCs' maps.
 Although many are nice,
-  I felt that I could make a modestly cleaner one:
+  I felt that I could make a modestly cleaner one.
 
-* [FCC 477][fcc-map]: is limited to the 477 data itself (of course!)
+* [FCC 477][fcc-map]: is limited to the 477 data itself (of course!), and is not so easy to navigate.  The FCC also has an [LTE map][lte-map] that is pretty nice.
 * [Illinois Broadband][il-map]: is limited to Illinois!
 * [NTIA Broadband Map][ntia-map]: has a limited number of variables. Cartographically, it is very hard to read, since all layers can be overlaid, and all are the same color.
 
@@ -26,6 +26,7 @@ The raw FCC data are around 10 GB, which is a lot for most people,
 The other maps didn't have a simple, tract level download,
   to get people started.
 I wanted to provide that.
+You can also find the code that generates those data in this [repo][repo].
 
 The map should also still include what I view as the three most-important
 available data sources on broadband:
@@ -81,5 +82,7 @@ Happy analyzing!
 [ntia-map]:    https://broadbandusa.maps.arcgis.com/apps/webappviewer/index.html?id=e2b4907376b548f892672ef6afbc0da5
 [il-map]:      https://gis.connectednation.org/portal/apps/webappviewer/index.html?id=caedfe7ce8924660a4ce62de6a75a7fd
 [fcc-map]:     http://broadbandmap.fcc.gov/
+[lte-map]:     https://fcc.maps.arcgis.com/apps/webappviewer/index.html?id=6c1b2e73d9d749cdb7bc88a0d1bdd25b
+[repo]:        https://github.com/JamesSaxon/internet-access-map
 
 
