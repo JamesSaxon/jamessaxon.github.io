@@ -257,9 +257,9 @@ The similarities are clear:
   thicker load-bearing masts and the increasingly delicate branches and "twigs."
 Both exhibit fractal patterns 
   that follow from shared structural requirements.
-But the components of the bridge are straight and regular
-  and they "limbs" connect in multiple points.
-Trees' branches curve and fork without loops.
+But while the components of the bridge are straight and regular
+  and the "limbs" are supported from multiple points,
+  trees' branches curve and fork without loops.
 However, since any weight must be supported,
   the shadows are all connected and
   lend themselves to laser cutting.
