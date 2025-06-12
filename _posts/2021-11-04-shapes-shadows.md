@@ -6,13 +6,13 @@ date:   2021-11-04
 categories: art
 ---
 
-tl;dr: I made lamps of trees and ripples:
+tl;dr: I made lamps about trees and ripples:
 
-<img class="center" style="padding: 5px; width: 65%;" alt="Shoulders." src="/assets/img/shapes_shadows/shoulders/1110324.jpg"/>
+{% include imagecap.html url="shapes_shadows/shoulders/1110324.jpg" width="65%" description="<em>Shoulders.</em>" %}
 
 A few years ago, through my academic work on [park access][parks]
   and my project to [cut mountains from paper][paper-mountains],
-  I became interested in using natural patterns to make soothing objects.
+  I got interested in using natural patterns to make soothing objects.
 Frederick Law Olmsted, the designer of Central Park in New York 
   and Jackson Park in Chicago, 
   described the influence of nature beautifully, [in 1865][olmsted-yosemite]:
@@ -86,12 +86,12 @@ These "harmonics" are the ways
 Or you and your dance playlist.
 If you've known me for a bit,
   I have probably raved at you about Bessel functions
-  at some point, while banging on the table 
+  while banging on the table 
     and scrutinizing the ripples in my coffee.[^1]
 
 You can solve this equation
   (the Laplace equation with Dirichlet boundary conditions)
-  for any surface or shape like so:[^2]
+  for any surface or shape, like so:[^2]
 
 ```
 ℒ = Laplacian[u[x, y], {x, y}];
@@ -100,9 +100,9 @@ poly = Rectangle[{0, 0}, {1, 2}];
 {vals, funs} = NDEigensystem[{ℒ, ℬ, u[x, y], {x, y} ∈ poly, 100];
 ```
 
-Without thinking much, 
-  I played with lots of shapes in Mathematica, 
-  and I liked a few of the solutions for a 1&times;2 rectangle:
+Without thinking too carefully, 
+  I played with a bunch of shapes in Mathematica, 
+  and found solutions that I liked for a 1&times;2 rectangle:
 
 <div class="img_set center">
   <a href="/assets/img/shapes_shadows/cont_1_2_15.png" data-lightbox="all" id="ss01" data-title="Solutions 15 and 16."><img class="thumb_soln" src="/assets/img/shapes_shadows/cont_1_2_15.png" alt=""/></a>
@@ -160,8 +160,8 @@ This straightforward, biologically-inspired algorithm
 The algorithm is initialized with
 
 <ol type="A">
-  <li> A starting point i.e. a stem.</li>
-  <li> A set of destinations, spread evenly across a leaf.  Biologically, these are sources of <em>auxin</em>, which attract growth.</li>
+  <li> A starting point, i.e. a stem.</li>
+  <li> A set of destinations, distributed across an area, i.e. a leaf.  Biologically, the destinations are sources of <em>auxin</em>, which attract growth.</li>
 </ol>
 
 It then loops on:
