@@ -48,7 +48,7 @@ In short:
 ### Modeling Natural Processes
 
 I began by modeling processes and patterns.
-Algebra and computers offer two divergent paths for doing this.
+Algebra and computation offer two divergent paths for doing this.
 We can derive the solutions to mathematical equations for
   things like ripples in a coffee cup, vibrations on a drum, or waves in water.
 Or we can define the algorithms or "rules"
