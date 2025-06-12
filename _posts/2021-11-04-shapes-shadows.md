@@ -86,7 +86,7 @@ These "harmonics" are the ways
 Or you and your dance playlist.
 If you've known me for a bit,
   I have probably raved at you about Bessel functions
-  at some point, while banging on the table 
+  while banging on the table 
     and scrutinizing the ripples in my coffee.[^1]
 
 You can solve this equation
