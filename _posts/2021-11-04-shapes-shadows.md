@@ -12,7 +12,7 @@ tl;dr: I made lamps about trees and ripples.  There are more pictures at the end
 
 A few years ago, through my academic work on [park access][parks]
   and my project to [cut mountains from paper][paper-mountains],
-  I became interested in using natural patterns to make soothing objects.
+  I got interested in using natural patterns to make soothing objects.
 Frederick Law Olmsted, the designer of Central Park in New York 
   and Jackson Park in Chicago, 
   described the influence of nature beautifully, [in 1865][olmsted-yosemite]:
