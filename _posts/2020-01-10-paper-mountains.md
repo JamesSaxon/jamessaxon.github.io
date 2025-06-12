@@ -231,7 +231,7 @@ So not only are the “old” parts of the map old, the new ones are too!
 [all-over-the-map]:  https://www.amazon.com/All-Over-Map-Cartographic-Odyssey/dp/1426219725/
 [aotm-blog]:         https://mapdragons.com/
 [huntington]:        https://catalog.huntington.org/record=b1799715
-[deschle]:           http://www.udeuschle.selfhost.pro/panoramas/makepanoramas_en.htm
+[deuschle]:          http://www.udeuschle.selfhost.pro/panoramas/makepanoramas_en.htm
 [soldati]:           https://www.peakfinder.org/
 [ferranti]:          http://viewfinderpanoramas.org/panoramas.html
 [google]:            https://www.google.com/maps/@46.2365458,6.0526617,32a,35y,116.16h,78.79t/data=!3m1!1e3
