@@ -17,7 +17,7 @@ Frederick Law Olmsted, the designer of Central Park in New York
   and Jackson Park in Chicago, 
   described the influence of nature beautifully, [in 1865][olmsted-yosemite]:
 
-> the enjoyment of scenery employs the mind without fatigue and yet exercises it, tranquilizes it and yet enlivens it; and thus, through the influence of the mind over the body, gives the effect of refereshing rest and reinvigoration to the whole system.
+> the enjoyment of scenery employs the mind without fatigue and yet exercises it, tranquilizes it and yet enlivens it; and thus, through the influence of the mind over the body, gives the effect of refreshing rest and reinvigoration to the whole system.
 
 More recently, E. O. Wilson's _Biophilia_ set the stage for biophilic design,
   though I was personally drawn to simulate not just living forms
