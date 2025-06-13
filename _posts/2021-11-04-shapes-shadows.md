@@ -91,7 +91,7 @@ If you've known me for a bit,
 
 You can solve this equation
   (the Laplace equation with Dirichlet boundary conditions)
-  in Mathematica, for any surface or shape:[^2]
+  for any surface or shape, like so:[^2]
 
 ```
 ℒ = Laplacian[u[x, y], {x, y}];
@@ -101,8 +101,8 @@ poly = Rectangle[{0, 0}, {1, 2}];
 ```
 
 Without thinking too carefully, 
-  I played with a bunch of shapes, 
-  and found some solutions that I liked for a 1&times;2 rectangle:
+  I played with a bunch of shapes in Mathematica, 
+  and found solutions that I liked for a 1&times;2 rectangle:
 
 <div class="img_set center">
   <a href="/assets/img/shapes_shadows/cont_1_2_15.png" data-lightbox="all" id="ss01" data-title="Solutions 15 and 16."><img class="thumb_soln" src="/assets/img/shapes_shadows/cont_1_2_15.png" alt=""/></a>
