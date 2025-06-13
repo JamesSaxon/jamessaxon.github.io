@@ -6,9 +6,9 @@ date:   2021-11-04
 categories: art
 ---
 
-tl;dr: I made lamps about trees and ripples.  There are more pictures at the end.
+tl;dr: I made lamps about trees and ripples:
 
-<img class="center" style="padding: 5px; width: 65%;" alt="Shoulders." src="/assets/img/shapes_shadows/shoulders/1110324.jpg"/>
+{% include imagecap.html url="shapes_shadows/shoulders/1110324.jpg" width="65%" description="<em>Shoulders</em> lamp.  More pics at the end." %}
 
 A few years ago, through my academic work on [park access][parks]
   and my project to [cut mountains from paper][paper-mountains],
