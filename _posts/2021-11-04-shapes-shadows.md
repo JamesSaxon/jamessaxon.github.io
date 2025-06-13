@@ -91,7 +91,7 @@ If you've known me for a bit,
 
 You can solve this equation
   (the Laplace equation with Dirichlet boundary conditions)
-  for any surface or shape like so in Mathematica:[^2]
+  in Mathematica, for any surface or shape:[^2]
 
 ```
 ℒ = Laplacian[u[x, y], {x, y}];
