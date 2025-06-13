@@ -160,8 +160,8 @@ This straightforward, biologically-inspired algorithm
 The algorithm is initialized with
 
 <ol type="A">
-  <li> A starting point i.e. a stem.</li>
-  <li> A set of destinations, spread across an area (a leaf).  Biologically, the destinations are sources of <em>auxin</em>, which attract growth.</li>
+  <li> A starting point, i.e. a stem.</li>
+  <li> A set of destinations, distributed across an area, i.e. a leaf.  Biologically, the destinations are sources of <em>auxin</em>, which attract growth.</li>
 </ol>
 
 It then loops on:
