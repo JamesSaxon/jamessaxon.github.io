@@ -161,7 +161,7 @@ The algorithm is initialized with
 
 <ol type="A">
   <li> A starting point i.e. a stem.</li>
-  <li> A set of destinations, spread evenly across a leaf.  Biologically, these are sources of <em>auxin</em>, which attract growth.</li>
+  <li> A set of destinations, spread across an area (a leaf).  Biologically, the destinations are sources of <em>auxin</em>, which attract growth.</li>
 </ol>
 
 It then loops on:
