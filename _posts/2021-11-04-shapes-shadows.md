@@ -8,7 +8,7 @@ categories: art
 
 tl;dr: I made lamps about trees and ripples:
 
-{% include imagecap.html url="shapes_shadows/shoulders/1110324.jpg" width="65%" description="<em>Shoulders</em> lamp.  More pics at the end." %}
+{% include imagecap.html url="shapes_shadows/shoulders/1110324.jpg" width="65%" description="<em>Shoulders.</em>" %}
 
 A few years ago, through my academic work on [park access][parks]
   and my project to [cut mountains from paper][paper-mountains],
