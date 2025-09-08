@@ -6,7 +6,7 @@ date:   2021-02-26
 categories: broadband data
 ---
 
-_This is a working document developed in partnership with the City of Chicago in an effort to demystify broadband and work towards a more connected Chicago. It was informed by input from community-based organizations, including McKinley Park Development Council, Neighborhood Network Alliance, Resurrection Project, and South Shore Works._
+_This document was prepared to support Internet access initiatives of the City of Chicago, during a grant for [Mapping and Mitigating the Digital Divide][mapping-mitigating] at UChicago. The scope and questions were based on input from community-based organizations, including McKinley Park Development Council, Neighborhood Network Alliance, Resurrection Project, and South Shore Works._
 
 This document is presented in three sections: [basic terms](#terms-and-definitions), [frequently asked questions](#frequently-asked-questions), and finally a [few myths](#common-myths-and-misconceptions).
 
@@ -229,6 +229,7 @@ ISPs generally lease equipment with their broadband services that are matched to
 
 #### Notes.
 
+[mapping-mitigating]: https://datascience.uchicago.edu/news/mapping-and-mitigating-the-urban-digital-divide/
 
 
 

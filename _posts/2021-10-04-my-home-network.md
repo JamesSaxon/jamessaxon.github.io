@@ -453,7 +453,7 @@ But with this absurdly detailed view of my home network,
 [how-much]:           {% post_url 2021-02-01-how-much-bandwidth-for-video %}
 [comcast-ie]:         https://www.internetessentials.com/covid19
 [apple-resp]:         https://www.ietf.org/archive/id/draft-cpaasch-ippm-responsiveness-00.html
-[mapping-mitigating]: https://cdac.uchicago.edu/news/mapping-and-mitigating-the-urban-digital-divide/
+[mapping-mitigating]: https://datascience.uchicago.edu/news/mapping-and-mitigating-the-urban-digital-divide/
 [data-org]:           https://data.org/
 [oplat]:              https://github.com/kyle-macmillan/OpLat
 [speedtest]:          https://www.speedtest.net/

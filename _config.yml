@@ -18,13 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Measuring Urban Resources 
+title: Jamie Saxon
 description: >- # this means to ignore newlines until "baseurl:"
-  I measure public resources in urban environments using 
-  large datasets, distributed computing, and custom electronics.
-  This site is a home for ongoing work and personal projects.
+  This is an archive of personal projects.
+  There are also a few posts related to my work 
+  on neighborhood resources while at UChicago.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://jamessaxon.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jamessaxon.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jamessaxon
 github_username:  jamessaxon
 author: James Saxon

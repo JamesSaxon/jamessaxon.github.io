@@ -3,7 +3,7 @@ layout: post
 author: Jamie Saxon
 title:  An Integrated Map of Internet Access
 date:   2022-02-21
-categories: broadband performance
+categories: broadband
 ---
 
 A little over a year ago, 
@@ -37,7 +37,7 @@ available data sources on broadband:
 
 Here is my map:
 
-<embed src="https://saxon.cdac.uchicago.edu/~jsaxon/us_map/" style="padding: 20px 0 0 0; width:100%; height: 80vh;">
+<embed src="/assets/internet_map/" style="padding: 20px 0 0 0; width:100%; height: 80vh;">
 
 <br>
 
