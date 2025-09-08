@@ -20,9 +20,10 @@
 
 title: Jamie Saxon
 description: >- # this means to ignore newlines until "baseurl:"
-  This is an archive of personal projects.
-  There are also a few posts related to my work 
-  on neighborhood resources while at UChicago.
+  An archive of personal projects.
+# There are also a few posts related to my work 
+# on neighborhood resources while at UChicago.
+
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://jamessaxon.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jamessaxon
