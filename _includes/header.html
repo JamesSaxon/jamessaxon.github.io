@@ -7,10 +7,12 @@
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+
+    <a href="/"><img class=logo src="/assets/img/jamie_saxon.svg" alt="Jamie Saxon" ></a>
 
     {%- if page_paths -%}
       <nav class="site-nav">
+
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -23,11 +25,13 @@
         <div class="trigger">
           {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            {%- if my_page.nav_title -%}
+            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.nav_title | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
-          <!-- <a class="page-link" href="https://saxon.cdac.uchicago.edu/">Academic Site</a> --> 
+
+          <!-- <a class="page-link" href="https://saxon.studio/">Art</a> --> 
+
         </div>
       </nav>
     {%- endif -%}

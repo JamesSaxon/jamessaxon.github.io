@@ -3,7 +3,7 @@ layout: post
 author: Jamie Saxon
 title:  Building an Olm-meter
 date:   2021-03-22
-categories: urban measurement electronics
+categories: electronics design
 ---
 
 I love GPS location data.

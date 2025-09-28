@@ -2,24 +2,59 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-$brand-color: #800000;
+$brand-color: #3355CC;
 @import "minima";
 
 .site-header {
- background-color: #800000;
+ border-top: 0px;
+ background-color: $brand-color;
+}
+
+.site-header .logo {
+ height: 38px;
+ padding: 8px 0px;
+}
+
+.social-media-list {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.social-media-list li {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.social-media-list li:last-child {
+  margin-right: 0em;
 }
 
 .site-title, .page-link {
  color: white !important;
+ line-height: 1;
+}
+
+.menu-icon svg path {
+  fill: $brand-color;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 550px) {
+ .headshot { display: none;}
+}
+
+@media only screen and (max-width: 600px) {
+ .page-link {
+    color: $brand-color !important;
+ }
 }
 
 a {
-  color: #800000;
   text-decoration: none;
 }
 
 a:visited {
-  color: #800000;
+  color: $brand-color;
   text-decoration: none;
 }
 
@@ -60,5 +95,20 @@ figcaption {
 
 .img_set {
   padding: 5px 0px 10px;
+}
+
+div.social_images {
+  width: 35%;
+  float: right;
+  margin: 0px 25px 20px 35px;
+}
+
+img.headshot {
+  border: 7px solid $brand-color;
+}
+
+.physics-pub-explanation {
+  font-size: 10pt;
+  font-style: italic;
 }
 

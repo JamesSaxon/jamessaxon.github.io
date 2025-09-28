@@ -29,6 +29,8 @@ url: "https://jamessaxon.io" # the base hostname & protocol for your site, e.g. 
 twitter_username: jamessaxon
 github_username:  jamessaxon
 linkedin_username:  jamie-saxon
+google_scholar_id: mw9bmF4AAAAJ
+cv: /assets/cv_saxon.pdf # Name of the CV in the assets folder.
 author: James Saxon
 
 # Build settings
@@ -42,7 +44,14 @@ defaults:
     values:
       image: true
 
-google_analytics: UA-123686738-1
+header_pages:
+  - posts.md
+  - academic.md
+  - art.md
+
+permalink: /:year/:month/:day/:title.html
+
+# google_analytics: UA-123686738-1
 
 # Exclude from processing.
 # The following items will not be processed, by default.
