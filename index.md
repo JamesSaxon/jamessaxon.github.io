@@ -30,7 +30,7 @@ As my interests shifted from physics towards geospatial and urban problems,
   I [published](academic) work on gerrymandering, 
   the dynamics of human mobility across neighborhoods,
   access to resources like healthcare, parks, and performant Internet,
-  and statistical work on inference from convenience samples.
+  and statistical inference from convenience samples.
 Along the way, I worked on firmware development and learned practical computer vision,
   and taught statistics to graduate students in public policy.
 
