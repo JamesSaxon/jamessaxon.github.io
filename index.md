@@ -20,7 +20,7 @@ I also defined and created new [products][michelin-li] for identifying dangerous
 I was originally trained as an experimental particle physicist.
 I started working on the [ATLAS experiment](atlas) as a high school student in 2003, 
   and spent many years building electronics, writing firmware, and commissioning large data systems.
-I have worked with large datasets since around 2008.
+I have worked with large datasets since 2009.
 As a graduate student at the University of Pennsylvania,
   I made [noteworthy](us-atlas) [contributions](atlas-thesis)
   to the discovery and first measurements of the Higgs Boson
