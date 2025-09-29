@@ -31,7 +31,9 @@ As my interests shifted from physics towards geospatial and urban problems,
   the dynamics of human mobility across neighborhoods,
   access to resources like healthcare, parks, and performant Internet,
   and statistical inference from convenience samples.
-Along the way, I worked on firmware development and learned practical computer vision,
+Along the way,
+  I worked on firmware development,
+  learned practical computer vision,
   and taught statistics to graduate students in public policy.
 
 I have two sons, and sometimes aspire to make light-based [art](art).
