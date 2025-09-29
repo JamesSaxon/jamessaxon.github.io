@@ -100,11 +100,15 @@ figcaption {
 div.social_images {
   width: 35%;
   float: right;
-  margin: 0px 25px 20px 35px;
+  margin: 0px 30px 15px 30px;
 }
 
 img.headshot {
   border: 7px solid $brand-color;
+  width: 92%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .physics-pub-explanation {

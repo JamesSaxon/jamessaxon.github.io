@@ -23,7 +23,7 @@ I started working on the [ATLAS experiment](atlas) as a high school student in 2
 I have worked with large datasets since 2009.
 As a graduate student at the University of Pennsylvania,
   I made [noteworthy](us-atlas) [contributions](atlas-thesis)
-  to the discovery and first measurements of the Higgs Boson
+  to the discovery and first measurements of the Higgs boson.
 
 I then spent eight years as a researcher the University of Chicago.
 As my interests shifted from physics towards geospatial and urban problems,
