@@ -25,7 +25,7 @@ James Saxon, Julia Koschinsky, Karina Acosta, Vidal Anguiano, Luc Anselin, Sergi
 
 James Saxon, Nick Feamster, [GPS-Based Geolocation of Consumer IP Addresses][gps-geoloc-pdf]. Passive and Active Measurement. PAM 2022. ([Published version.][gps-geoloc-pub])
 
-Kyle MacMillan, Tarun Mangla, <em>James Saxon</em>, Nick Feamster, [Measuring the Performance and Network Utilization of Popular Video Conferencing Applications.][video-conf-pub]. ACM SIGCOMM <em>Internet Measurement Conference</em>, 2021.
+Kyle MacMillan, Tarun Mangla, <em>James Saxon</em>, Nick Feamster, [Measuring the Performance and Network Utilization of Popular Video Conferencing Applications.][video-conf-pub] ACM SIGCOMM <em>Internet Measurement Conference</em>, 2021.
 
 
 ### Selected Publications in Physics
