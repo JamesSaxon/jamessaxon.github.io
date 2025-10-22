@@ -12,17 +12,17 @@ Hi, I'm Jamie Saxon.
 
 I work on spatial problems, software / hardware integration, and engineering for large datasets.
 
-I am currently a software engineer at [Mapbox](mapbox), where I transform raw location telemetry
+I am currently a software engineer at [Mapbox][mapbox], where I transform raw location telemetry
 into actionable data.  I've made major contributions to the accuracy of our traffic speeds 
 and classification of device modality (walking vs driving).
 I also defined and created new [products][michelin-li] for identifying dangerous traffic conditions.
 
 I was originally trained as an experimental particle physicist.
-I started working on the [ATLAS experiment](atlas) as a high school student in 2003, 
+I started working on the [ATLAS experiment][atlas] as a high school student in 2003, 
   and spent many years building electronics, writing firmware, and commissioning large data systems.
 I have worked with large datasets since 2009.
 As a graduate student at the University of Pennsylvania,
-  I made [noteworthy](us-atlas) [contributions](atlas-thesis)
+  I made [noteworthy][us-atlas] [contributions][atlas-thesis])
   to the discovery and first measurements of the Higgs boson.
 
 I then spent eight years as a researcher the University of Chicago.
